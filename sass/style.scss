@@ -1,0 +1,87 @@
+// @charset "UTF-8";
+
+/* Global */
+@import "global/fonts";
+
+/* Sass */
+@import "variables";
+
+@import "scaffolding";
+
+@import "foundation";
+
+@import "fixedsticky";
+
+/* Blocks */
+@import "blocks/header";
+
+@import "blocks/contact-phones";
+
+@import "blocks/stage";
+
+@import "blocks/box-info";
+
+@import "blocks/box-sidenav";
+
+@import "blocks/dotstyle";
+
+@import "blocks/box-rte";
+
+@import "blocks/footer";
+
+@import "blocks/price";
+
+@import "blocks/tire-service";
+
+@import "blocks/services";
+
+@import "accordion";
+
+@import "blocks/contacts";
+
+@import "blocks/blog";
+
+@import "blocks/blog-article";
+
+@import "blocks/vacancy";
+
+@import "blocks/news";
+
+@import "blocks/news-article";
+
+@import "blocks/offers";
+
+@import "blocks/our-team";
+
+@import "blocks/advantages";
+
+@import "blocks/about-us";
+
+@import "blocks/certificates";
+
+@import "slick-slider";
+
+@import "blocks/services-article";
+
+@import "blocks/service-and-price-table";
+
+@import "blocks/breadcrumbs";
+
+@import "blocks/customers";
+
+@import "blocks/online-video";
+
+@import "autocomplete";
+
+@import "merged";
+
+
+
+// @import 'doNotUseBlocks/datepicker"; // стили для виджета выбора даты в новостной ленте, не используется
+// @import 'doNotUseBlocks/flipbook"; // блок не используется
+// @import 'doNotUseBlocks/factsFigures"; // блок не используется
+// @import 'doNotUseBlocks/flowplayer";
+// @import 'doNotUseBlocks/places"; // блок использовался на странице location-search.html, сейчас отключён
+// @import 'doNotUseBlocks/downloads"; // блок использовался на странице https://en.trost.com/service/downloads/, сейчас отключён
+// @import 'doNotUseBlocks/searchresults"; // блок не знаю где использовался (искал в не используемых страницах и на используемых), сейчас отключён
+// @import 'doNotUseBlocks/doNotUsed"; // не используется

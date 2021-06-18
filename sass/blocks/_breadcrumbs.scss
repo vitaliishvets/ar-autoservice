@@ -1,0 +1,63 @@
+
+/*--------------------------------------------------------------
+ * # Breadcrumbs
+ * ------------------------------------------------------------*/
+
+.boxRTE .breadcrumbs {
+    margin: 0 0 1rem 0;
+    font-family: 'MetaProCondBook', sans-serif;
+    list-style: none;
+}
+
+.boxRTE .breadcrumbs::before, .breadcrumbs::after {
+    display: table;
+    content: ' ';
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+}
+
+.boxRTE .breadcrumbs::after {
+    clear: both;
+}
+
+.boxRTE .breadcrumbs li {
+    margin-left: .875rem;
+    float: left;
+    font-size: .875rem;
+    color: #0a0a0a;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.boxRTE .breadcrumbs li a {
+    color: #0a0a0a;
+
+}
+
+.boxRTE .breadcrumbs li:before {
+    content: none;
+}
+
+.boxRTE .breadcrumbs li a:hover {
+    text-decoration: none;
+}
+
+.boxRTE .breadcrumbs li:not(:last-child)::after {
+    position: relative;
+    margin: 0 .5rem;
+    opacity: 1;
+    // content: "/";
+    color: #cacaca;
+    content: "›";
+    // font-size: 1rem;
+}
+
+.boxRTE .breadcrumbs .active {
+    text-decoration: none;
+    color: #8a8a8a;
+    cursor: default;
+    text-indent: .0625rem !important;
+    margin-left: 0 !important;
+}

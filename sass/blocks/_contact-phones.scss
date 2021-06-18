@@ -1,0 +1,55 @@
+
+/*--------------------------------------------------------------
+ * # Contact-phones
+ * ------------------------------------------------------------*/
+
+.contact-phones {
+    float: right;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    line-height: 1;
+}
+
+.contact-phones ul {
+    margin-bottom: 0;
+}
+
+.contacts-phones__list-city,
+.contacts-phones__list-numbers {
+    float: left;
+}
+
+.contacts-phones__list-city {
+    margin-left: .5rem;
+}
+
+.contact-phones__item {
+    position: relative;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    color: #323232;
+    list-style: none;
+}
+
+.link-item {
+    color: #e51313;
+}
+
+.link-item:before {
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    margin-right: .5rem;
+    content: '';
+    background-image: url(/img/icons/phone-alt.svg);
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 80em) {
+    
+    .contact-phones {
+        margin-top: .625rem;
+    }
+
+}
+

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <title>icon_filter_active</title>
+  <g>
+    <rect width="50" height="50" style="fill: #e51313;opacity: 0"/>
+    <path d="M11,48H40a2.05,2.05,0,0,0,2-2V45a2.05,2.05,0,0,0-2-2V7a2.05,2.05,0,0,0,2-2V4a2.05,2.05,0,0,0-2-2H11A2,2,0,0,0,9,3.93V5a2.05,2.05,0,0,0,2,2V43a2.05,2.05,0,0,0-2,2v1.07A2,2,0,0,0,11,48ZM37,7h1V43H37ZM35,7h1V43H35ZM33,7h1V43H33ZM31,7h1V43H31ZM29,7h1V43H29ZM27,7h1V43H27ZM25,7h1V43H25ZM23,7h1V43H23ZM21,7h1V43H21ZM15,7h1V43H15ZM13,7h1V43H13Zm5,36H17V7h1Zm2,0H19V7h1Z" style="fill: #e51313"/>
+  </g>
+</svg>

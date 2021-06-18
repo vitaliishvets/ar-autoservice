@@ -1,0 +1,54 @@
+
+/*--------------------------------------------------------------
+ * # Service item article
+ * ------------------------------------------------------------*/
+
+.services-article-section h1.headline {
+    margin-top: .25rem;
+}
+
+.services-article-section h2.headline {
+    margin-top: 2.5rem;
+}
+
+.services-article-section .title-for-ul {
+    margin-bottom: .625rem;
+    font-size: inherit;
+}
+
+.services-article-section ul li {
+    margin-bottom: .3125rem;
+	line-height: 1.5;
+}
+
+.services-article-section figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+// .services-article-section img {
+//     border-radius: 12px;
+//     box-shadow: 0px 0px 7px rgba(0, 0, 0, .15);
+// }
+
+.services-article-section figcaption {
+    margin: 1rem 0;
+    font-size: .75rem;
+    font-style: normal;
+    text-align: center;
+    color: $cs-color-secondary;
+}
+
+.services-article-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 47.9375em) {
+
+    .services-article-section .figcaption {
+        margin-bottom: .625rem;
+    }
+
+}

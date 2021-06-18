@@ -1,0 +1,69 @@
+
+/*--------------------------------------------------------------
+ * # Vacancy
+ * ------------------------------------------------------------*/
+
+.vacancy h1.headline {
+    margin-top: .25rem;
+}
+
+.vacancy-offer .moreLink:after {
+    font-family: 'MetaProCondBook', sans-serif;
+}
+
+.vacancy-offer .accordion-navigation .left {
+    line-height: 1.3;
+}
+
+.vacancy-offer ul {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    list-style: none;
+}
+
+.vacancy-offer li {
+    position: relative;
+}
+
+.vacancy-offer li a {
+    padding: 1.25rem;
+    display: block;
+}
+
+.vacancy-offer p {
+    font-size: 1.125rem;
+    line-height: 1.1875rem;
+    margin: 0;
+    margin-bottom: .625rem;
+    padding-right: 1.875rem;
+}
+
+.vacancy-offer p.headline {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.vacancy-offer p:first-child {
+    color: #e51717;
+}
+
+.vacancy-offer .offer-subtitle {
+    font: 1.125rem/1.4 'MetaProCondBold', sans-serif;
+}
+
+@media only screen and (min-width: 48em) {
+
+    .vacancy-offer .moreLink {
+        line-height: 1;
+    }
+    
+    .vacancy-offer .moreLink:after {
+        font-size: 1.75rem;
+        vertical-align: -.0625rem;
+    }
+
+    .vacancy-offer p {
+        padding-right: 5rem;
+    }
+    
+}

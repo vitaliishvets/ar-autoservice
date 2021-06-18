@@ -1,0 +1,57 @@
+
+/*--------------------------------------------------------------
+ * # Tire service tables
+ * ------------------------------------------------------------*/
+
+.tire-service-wrapper {
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 2.625rem;
+}
+
+.tire-service-table {
+    width: 100%;
+    text-align: center;
+}
+
+.tire-service-table:first-child {
+    margin-bottom: .4375rem;
+}
+
+.tire-service-title {
+    padding: 1px 10px;
+    font: 1.125rem 'MetaProCondBook', sans-serif;
+    background: #f8f8f8;
+}
+
+.tire-service-table .price {
+    font: 1.25rem 'MetaProCondBold', sans-serif;
+}
+
+.tire-service-table caption {
+    color: #e51717;
+    background: #e8e8e8;
+    border-top-left-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+}
+
+.tire-service-table caption h2,
+.tire-service-table caption h3 {
+    margin: 0;
+    padding: 0.625rem;
+    font: 1.5rem/1.5 'MetaProCondBold', sans-serif;
+    color: #e51717;
+}
+
+.tire-service-table tfoot {
+    line-height: 1.5;
+}
+
+.tire-service-table tfoot {
+    font-family: 'MetaProCondBook', sans-serif;
+    text-align: left;
+}
+
+.tire-service-table .tire-service-row:nth-child(2n+1) {
+    background: #f3f3f3;
+}

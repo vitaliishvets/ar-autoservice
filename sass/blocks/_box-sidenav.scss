@@ -1,0 +1,116 @@
+
+/*--------------------------------------------------------------
+ * # Box sidenav
+ * ------------------------------------------------------------*/
+
+.boxSidenav {
+    position: relative;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+}
+
+.boxSidenav,
+.boxSidenav .moreLink,
+.boxSidenav a,
+.boxSidenav a h2 {
+    color: #fff;
+}
+
+.boxSidenav p:not(.headline) {
+    line-height: 1.4375rem;
+}
+
+.boxSidenav .headline {
+    margin-bottom: .3125rem;
+}
+
+.boxSidenav.bgGrey,
+.boxSidenav.bgOrange {
+    background-color: #898989;
+    background-image: linear-gradient(#898989, #626161);
+}
+
+.boxSidenav.bgGrey a .overlayHover,
+.boxSidenav.bgOrange a .overlayHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #bfbfbf;
+    opacity: 0;
+    transition: opacity .35s;
+}
+
+.boxSidenav.bgGrey a:hover .moreLink,
+.boxSidenav.bgGrey a:hover p,
+.boxSidenav.bgGrey a:hover p span,
+.boxSidenav.bgGrey a:hover h2,
+.boxSidenav.bgOrange a:hover .moreLink,
+.boxSidenav.bgOrange a:hover p,
+.boxSidenav.bgOrange a:hover h2,
+.boxSidenav.bgOrange a:hover p span {
+    color: #323232;
+}
+
+.boxSidenav.bgGrey a:hover .overlayHover,
+.boxSidenav.bgOrange a:hover .overlayHover {
+    opacity: 1;
+}
+
+.boxSidenav.bgGrey a .content,
+.boxSidenav.bgOrange a .content {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.boxSidenav.bgOrange {
+    background-color: #f42525;
+    background-image: linear-gradient(#f42525, #e51313);
+}
+
+.boxSidenav.bgOrange a .overlayHover {
+    background: #f4a2a2;
+}
+
+.boxSidenav.bgOrange a:hover .moreLink,
+.boxSidenav.bgOrange a:hover .moreLinkText,
+.boxSidenav.bgOrange a:hover p,
+.boxSidenav.bgOrange a:hover h2,
+.boxSidenav.bgOrange a:hover p span {
+    color: #e51313;
+}
+
+.boxSidenav .linkFullSize {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 8.75rem;
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+
+    .boxSidenav p:not(.headline) {
+        font-size: .875rem;
+        line-height: 1.3125rem;
+    }
+
+    .boxSidenav {
+        padding: .9375rem;
+    }
+
+    .boxSidenav .linkFullSize {
+        min-height: 8.375rem;
+    }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+    .boxSidenav {
+        margin-top: 1.875rem;
+    }
+
+}

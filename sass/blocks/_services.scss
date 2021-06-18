@@ -1,0 +1,25 @@
+
+/*--------------------------------------------------------------
+ * # Services
+ * ------------------------------------------------------------*/
+
+.services h1.headline {
+    margin-top: .25rem;
+}
+
+.services .accordion-navigation ul li a {
+    color: #0060a0;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(0,96,160,.15);
+    transition-property: border-bottom,border-color,background,color,fill;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.services .accordion-navigation ul li a:hover {
+    color: #e51717;
+    border-color: rgba(176,48,0,.15);
+    transition: none;
+}

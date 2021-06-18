@@ -1,0 +1,244 @@
+
+/*--------------------------------------------------------------
+ * # Blog article 
+ * расчеты сетки делал тут - https://grtcalculator.com/
+ * ------------------------------------------------------------*/
+
+.blog-article h1.headline {
+    margin-top: .25rem;
+}
+
+.blog-article h1 {
+    color: $cs-color-headline;
+}
+
+.blog-article-section {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.blog-article-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.blog-article-section .table-descr,
+.blog-article-section .table-safety {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    font-family: 'MetaProCondBook', sans-serif;
+    border-radius: .75rem;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.15);
+}
+
+.blog-article-section .table-safety {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,198,112,1);
+    
+}
+
+.blog-article-section .table-descr {
+    background-color: rgb(159,197,232);
+}
+
+.blog-article-section .table-safety p,
+.blog-article-section .table-safety ul,
+.blog-article-section .table-safety ul > li,
+.blog-article-section .table-descr p {
+    margin-bottom: 0;
+    font-size: 1.125rem;
+}
+
+.blog-article-section .table-safety span,
+.blog-article-section .table-safety-subtitle span {
+    color: red;
+}
+
+.blog-article-section p.table-safety-subtitle {
+    margin-top: 5px;
+    font: .875em/1.2 'MetaProCondBook', sans-serif;
+}
+
+.blog-article-section .list-title {
+    margin-bottom: .5rem;
+    font-size: inherit;
+}
+
+.blog-article-section ul {
+	margin-bottom: 30px;
+}
+
+.blog-article-section ul li {
+  line-height: 1.4;
+}
+
+.blog-article-section h2 {
+    margin: 3.75rem auto 1.875rem;
+	font-family: 'MetaProCondBold', sans-serif;
+}
+
+.blog-article-section h2:nth-child(2) {
+    margin-top: 0px;
+}
+
+.blog-article-section h3 {
+    margin: 2.5rem auto 1.875rem;
+	font-family: 'MetaProCondBold', sans-serif;
+}
+
+.blog-article-section figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+// .blog-article-section img {
+//     box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+//     border-radius: .3125rem;
+// }
+
+figcaption {
+    font-style: normal;
+    font-size: .75rem;
+    margin: 1rem 0;
+    color: $cs-color-secondary;
+    text-align: center;
+}
+
+@media only screen and (max-width: 47.9375em) {
+    
+    .blog-article-section .figcaption {
+        margin-bottom: .625rem;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+	.blog-article-section h2,
+    .blog-article-section h3 {
+        line-height: 1;
+	}
+
+	.blog-article-section h2 {
+		font-size: 2.5rem;
+	}
+
+	.blog-article-section h3 {
+		font-size: 1.6875rem;
+	}
+
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+
+    .blog-article-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .blog-article-section h3 {
+        font-size: 1.6875rem;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .blog-article-section h1.headline {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+
+    .blog-article-section .blogArticleImages {
+        margin-top: .3125rem;
+    }
+
+    .blog-article-section .RTEimage:nth-child(odd) {
+        padding-right: .46875rem;
+    }
+
+    .blog-article-section .RTEimage:nth-child(even) {
+        padding-left: .46875rem;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+    .blog-article-section .extraPadding {
+        margin-top: 0;
+    }
+
+    .blog-article-section .extraPadding > .headline:first-child {
+        margin-top: 1.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .blog-article-section h2 {
+        font-size: 2.25rem;
+    }
+
+}
+
+// .blogArticlePagination {
+//     background: #e8e8e8;
+//     line-height: 2.1875rem;
+//     margin-top: 1.875rem;
+//     margin-bottom: 0;
+// }
+
+// .blogArticlePagination .moreLink {
+//     position: absolute;
+//     left: 1.25rem;
+//     bottom: inherit;
+//     right: inherit;
+//     line-height: inherit;
+//     margin: 0 .625rem;
+// }
+
+// .blogArticlePagination .moreLink.right {
+//     left: auto;
+//     right: 1.25rem;
+// }
+
+// .blogArticlePagination .moreLink.left:after {
+//     content: none;
+// }
+
+// .blogArticlePagination .moreLink.left:before {
+//     content: "«";
+//     margin-right: .3125rem;
+// }
+
+// .blogArticlePagination .moreLink:after,
+// .blogArticlePagination .moreLink:before {
+//     font-size: 1.75rem;
+//     vertical-align: -.1875rem;
+//     line-height: 1;
+// }
+
+// .blogArticlePagination a {
+//     text-transform: uppercase;
+//     color: #e51313;
+//     font-size: 1.125rem;
+// }
+
+// .blogArticlePagination a:not(.moreLink) {
+//     vertical-align: -1px;
+//     line-height: 1;
+//     font-family: 'MetaProCondBook', sans-serif;
+//     font-size: 1.125rem;
+// }
+
+// .left.inactive span,
+// .moreLink.inactive,
+// .right.inactive span {
+//     color: #A3A3A3 !important;
+//     font-size: 1.125rem;
+//     font-family: 'MetaProCondBook', sans-serif;
+// }

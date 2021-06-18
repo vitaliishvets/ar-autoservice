@@ -1,0 +1,194 @@
+
+/* SEARCHRESULTS
+ * ====================================================================================================================*/
+
+.searchresultsTeaser .searchTerm {
+  text-indent: 0;
+  display: inline;
+}
+
+.searchresultsList ul {
+  list-style: none;
+  margin: 0;
+}
+
+.searchresultsList li {
+  margin-left: .625rem;
+}
+
+.searchresultsList li:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.searchresultsList p {
+  margin-bottom: 0;
+}
+
+.searchresultsList .title {
+  font-family: 'MetaProCondBold', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.1875rem;
+  text-transform: uppercase;
+}
+
+.searchresultsList .url {
+  font-size: .75rem;
+}
+
+.searchresultsList .filetype {
+  font-size: 65%;
+}
+
+.searchresultsList .title a {
+  color: #e51717;
+}
+
+.searchresultsList .title a:hover {
+  color: #505050;
+}
+
+@media only screen {
+  .searchresultsList .url {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 47.9375em) {
+  .searchresultsList .excerpt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .searchresultsList > .column {
+    margin: 1.25rem 0;
+  }
+
+  .searchresultsList li {
+    margin-left: 1.25rem;
+  }
+
+  .searchresultsList .excerpt {
+    font-size: 1rem;
+    line-height: 1.4375rem;
+  }
+
+  .searchresultsList li {
+    margin-left: .625rem;
+  }
+
+  .searchresultsList .url {
+    display: inherit !important;
+  }
+
+  .searchresultsList table.url {
+    display: table !important;
+  }
+
+  .searchresultsList thead.url {
+    display: table-header-group !important;
+  }
+
+  .searchresultsList tbody.url {
+    display: table-row-group !important;
+  }
+
+  .searchresultsList tr.url {
+    display: table-row;
+  }
+
+  .searchresultsList td.url,
+  .searchresultsList th.url {
+    display: table-cell !important;
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+  .searchresultsList > .column {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .searchresultsList .url {
+    display: inherit !important;
+  }
+
+  .searchresultsList table.url {
+    display: table !important;
+  }
+
+  .searchresultsList thead.url {
+    display: table-header-group !important;
+  }
+
+  .searchresultsList tbody.url {
+    display: table-row-group !important;
+  }
+
+  .searchresultsList tr.url {
+    display: table-row;
+  }
+
+  .searchresultsList td.url,
+  .searchresultsList th.url {
+    display: table-cell !important;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .searchresultsList .url {
+    display: inherit !important;
+  }
+
+  .searchresultsList table.url {
+    display: table !important;
+  }
+
+  .searchresultsList thead.url {
+    display: table-header-group !important;
+  }
+
+  .searchresultsList tbody.url {
+    display: table-row-group !important;
+  }
+
+  .searchresultsList tr.url {
+    display: table-row;
+  }
+
+  .searchresultsList td.url,
+  .searchresultsList th.url {
+    display: table-cell !important;
+  }
+}
+
+@media only screen and (min-width: 80.0625em) {
+  .searchresultsList .url {
+    display: inherit !important;
+  }
+
+  .searchresultsList table.url {
+    display: table !important;
+  }
+
+  .searchresultsList thead.url {
+    display: table-header-group !important;
+  }
+
+  .searchresultsList tbody.url {
+    display: table-row-group !important;
+  }
+
+  .searchresultsList tr.url {
+    display: table-row;
+  }
+
+  .searchresultsList td.url,
+  .searchresultsList th.url {
+    display: table-cell !important;
+  }
+}

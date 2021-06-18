@@ -1,0 +1,101 @@
+
+/*--------------------------------------------------------------
+ * # About Us
+ * ------------------------------------------------------------*/
+
+.about-us .boxRTE .breadcrumbs {
+	margin: 0;
+}
+
+.company-long-text h1.headline {
+    margin-top: 1.25rem;
+    margin-bottom: .625rem;
+}
+
+// .company-long-text h1.headline {
+//     line-height: 1.9375rem;
+// }
+
+.company-long-text .company-descr {
+    font: 1.25rem/1.5 'MetaProCondBook', sans-serif;
+}
+
+// .company-long-text .company-descr {
+//     margin-bottom: 0;
+// }
+
+.company-long-text ul {
+	margin-bottom: 1.5rem;
+	margin-top: -1rem;
+}
+
+.company-short-text ul li {
+	line-height: 1.5rem;
+    margin-bottom: .3125rem;
+    text-indent: -.8125rem;
+}
+
+.company-short-text figure {
+	margin: .625rem 0 0 0;
+}
+
+.company-short-text .figcaption {
+	font-style: normal;
+    font-size: .75rem;
+    margin: .3125rem 0;
+    color: $cs-color-secondary;
+    text-align: center;
+}
+
+@media only screen and (max-width: 48em) {
+
+	.company-short-text .boxRTE .breadcrumbs {
+		margin: 0;
+	}
+
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+
+	.company-short-text .headline {
+ 		margin-bottom: .5rem;
+	}
+
+    .company-short-text .boxRTE {
+        margin-top: .625rem;
+    }
+
+    .company-short-text picture {
+        width: 100%;
+    }
+
+    .company-short-text img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .about-us.row.medium-uncollapse > .column > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+	.company-long-text .headline {
+		margin-bottom: .5rem;
+	}
+
+    .company-short-text .boxRTE {
+        margin-top: 1.25rem;
+    }
+
+    .company-short-text figure {
+        margin-top: 0;
+    }
+
+}

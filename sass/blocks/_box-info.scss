@@ -1,0 +1,302 @@
+
+/*--------------------------------------------------------------
+ * # Box Info
+ * ------------------------------------------------------------*/
+
+.boxInfo {
+    position: relative;
+    height: 19.5625rem;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(#f0f0f0, #d2d2d3);
+    background-position: top;
+    border-top: .125rem solid #e51313;
+    // box-shadow: 0.1rem 0.1rem 10px rgba(122,122,122,0.5);
+}
+
+.boxInfo .headline {
+    line-height: 1.3;
+}
+
+.boxInfo .infoArea {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem 1.25rem;
+    height: 4.6875rem;
+    overflow: hidden;
+    transition: height 0.35s;
+}
+
+.boxInfo .infoArea p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    margin: 0;
+}
+
+.boxInfo .infoArea .overlayBlurImage,
+.boxInfo .infoArea .overlayWhite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.boxInfo .infoArea .overlayBlurImage {
+    filter: blur(5px);
+    height: 100px;
+    overflow: hidden;
+    transition: background-position .35s, height .35s;
+    background-position: center top -14.75rem;
+}
+
+.boxInfo .infoArea .infoAreaLongText,
+.boxInfo .infoArea .infoAreaShortText {
+    position: relative;
+    transition: opacity .35s;
+}
+
+.boxInfo .infoArea .infoAreaLongText {
+    opacity: 0;
+}
+
+.boxInfo a.infoArea {
+    background: rgba(255,255,255,.45);
+}
+
+.boxInfo.noHover .infoArea {
+    height: auto;
+}
+
+.boxInfo p {
+    font-size: 1.3125rem;
+    line-height: 2rem;
+    color: #323232;
+}
+
+.boxInfo h2:not(.news) {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgb(0,0,0);
+}
+
+.boxInfo p:last-child:not(:first-child) {
+    margin-top: -1.25rem;
+    margin-bottom: 0;
+}
+
+.boxInfo p.white {
+    color: #fff;
+    text-shadow: 0 0 5px #323232;
+}
+
+.boxInfo .newsTeaserLinks {
+    list-style: none;
+    margin: 0;
+}
+
+.boxInfo .newsTeaserLinks li {
+    padding-bottom: .3125rem;
+    margin-bottom: .3125rem;
+    border-bottom: .0625rem solid #323232;
+}
+
+.boxInfo .newsTeaserLinks li:last-child {
+    border: none;
+    margin: 0;
+}
+
+.boxInfo .newsTeaserLink {
+    display: block;
+}
+
+.boxInfo .newsTeaserLink p {
+    font: .875rem/1.6 'Arial', sans-serif;
+}
+
+.boxInfo .newsTeaserLink .newsTeaserDate {
+    font-size: .75rem;
+}
+
+.boxInfo .newsTeaserLink .newsTeaserText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.boxInfo.boxBig {
+    background: center top no-repeat #f0f0f0;
+    background-size: cover;
+    height: auto;
+}
+
+.boxInfo.boxBig h1 {
+    line-height: 1.2;
+    margin-bottom: .625rem;
+}
+
+.boxInfo.boxBig p {
+    margin-top: 0 !important;
+    font-family: 'MetaProCondBook', sans-serif;
+    font-size: 1.3125rem;
+}
+
+.no-touch .boxInfo a.boxLink:hover .infoArea {
+    height: 11.25rem;
+}
+
+.no-touch .boxInfo a.boxLink:hover .overlayBlurImage {
+    background-position: center top -8.1875rem;
+    height: 180px;
+}
+
+.no-touch .boxInfo a.boxLink:hover .infoAreaShortText {
+    opacity: 0;
+    display: none;
+}
+
+.no-touch .boxInfo a.boxLink:hover .infoAreaLongText {
+    opacity: 1;
+}
+
+.no-touch .boxInfo.noHover a.boxLink:hover .overlayBlurImage {
+    background-position: center top -14.75rem;
+}
+
+.no-touch .boxInfo.noHover a.boxLink:hover .infoArea {
+    height: 4.6875rem;
+}
+
+.no-touch .boxInfo.noHover a.boxLink:hover .infoAreaShortText {
+    opacity: inherit;
+    display: inherit;
+}
+
+@media only screen and (max-width: 47.9375em) {
+
+    .boxInfo.boxBig .linkFullSize {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+
+    .boxInfo.boxBig p {
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .boxInfo.boxBig {
+        height: 19.5625rem;
+    }
+
+    .boxInfo.boxBig h1 {
+        margin-bottom: .5rem;
+    }
+
+    .boxInfo.boxBig p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .boxInfo p {
+        line-height: 2.1875rem;
+    }
+
+}
+
+@media only screen and (max-width: 63.9375em) {
+
+    .boxInfo.boxBig {
+        height: auto;
+    }
+
+    .boxInfo.boxBig .linkFullSize {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+
+    .boxInfo {
+        height: 17.6875rem;
+        padding: .9375rem;
+    }
+    
+    .boxInfo p {
+        line-height: 1.875rem;
+    }
+
+    .boxInfo .headline {
+        font-size: 1.625rem;
+        margin-bottom: .75rem;
+        line-height: 1.4;
+    }
+
+    .boxInfo .infoArea {
+        height: 4.375rem;
+        padding: 1rem .9375rem;
+    }
+
+    .boxInfo .infoArea .overlayBlurImage {
+        background-position: center top -13.1875rem;
+    }
+
+    .boxInfo .infoArea p {
+        font-size: .875rem;
+        line-height: 1.3125rem;
+    }
+
+    .boxInfo .newsTeaserLink p {
+        font-size: .75rem;
+        line-height: 1.25rem;
+    }
+
+    .boxInfo.boxBig {
+        height: 17.6875rem;
+    }
+
+    .boxInfo.boxBig h1 {
+        margin-bottom: .1rem;
+        line-height: 1.2;
+    }
+
+    .boxInfo.boxBig p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    .no-touch .boxInfo a.boxLink:hover .overlayBlurImage {
+        background-position: center top -6.3125rem;
+    }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+    .boxInfo p {
+        line-height: 2.25rem;
+    }
+
+    .boxInfo {
+        margin-top: 1.875rem;
+    }
+
+}

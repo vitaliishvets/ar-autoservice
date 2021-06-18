@@ -1,0 +1,50 @@
+
+/*--------------------------------------------------------------
+ * # News article
+ * ------------------------------------------------------------*/
+
+.news-article h1.headline {
+    margin-top: .25rem;
+}
+
+.news-article .image-subtitle {
+    margin-top: 5px;
+    font: .875rem/1.2 'MetaProCondBook', sans-serif;
+    color: #8a8a8a;
+}
+
+.news-article figure {
+    margin: 0;
+    text-align: center;
+}
+
+.news-article .gif {
+    border: .0625rem solid #c8c8c8;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.news-article .gif img {
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 48em) {
+
+    .news-article .newsArticleImages {
+        margin-top: .9375rem;
+    }
+
+    .news-article .RTEimage:nth-child(odd) {
+        padding-right: .625rem;
+    }
+
+    .news-article .RTEimage:nth-child(even) {
+        padding-left: .625rem;
+    }
+
+    .news-article .RTEimage picture,
+    .news-article .RTEimage picture img {
+        width: 100%;
+    }
+    
+}

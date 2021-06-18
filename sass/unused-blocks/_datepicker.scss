@@ -1,0 +1,332 @@
+
+/* DATEPICKER.js
+ * ====================================================================================================================*/
+.boxDatepicker {
+  border-top: .125rem solid #e51313;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background-color: #f5f1ee;
+  background-image: -owg-linear-gradient(#f3f0ed, #e7e4d8);
+  background-image: linear-gradient(#f3f0ed, #e7e4d8);
+}
+
+.boxDatepicker #datepicker {
+  position: relative;
+  padding: 0 .625rem;
+}
+
+.boxDatepicker #datepicker table {
+  table-layout: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.boxDatepicker #datepicker table thead {
+  background: #323232;
+  color: #fff;
+}
+
+.boxDatepicker #datepicker table thead th {
+  font-weight: 400 !important;
+  height: 2.5rem !important;
+}
+
+.boxDatepicker #datepicker table tr td {
+  text-align: center;
+  vertical-align: middle;
+  height: 1.875rem;
+}
+
+.boxDatepicker #datepicker table tr td a {
+  display: block;
+  line-height: 1.875rem;
+}
+
+.boxDatepicker #datepicker table tr td a:hover {
+  background: #e51313;
+  color: #fff;
+}
+
+.boxDatepicker #datepicker table,
+.boxDatepicker #datepicker td,
+.boxDatepicker #datepicker th {
+  border: .0625rem solid #323232;
+}
+
+.boxDatepicker #datepicker select {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  border-radius: 0 !important;
+}
+
+.boxDatepicker #datepicker select:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.boxDatepicker #datepicker .ui-datepicker-next,
+.boxDatepicker #datepicker .ui-datepicker-prev,
+.boxDatepicker #datepicker .ui-datepicker-title {
+  display: none;
+}
+
+.boxDatepicker #datepicker .ui-datepicker-current-day {
+  background: inherit;
+}
+
+.boxDatepicker #datepicker .ui-datepicker-current-day a {
+  color: #fff;
+}
+
+.boxDatepicker #datepicker .ui-datepicker-selectable {
+  background: #a3a3a3;
+}
+.boxDatepicker #datepicker .ui-datepicker-selectable a {
+  color: #fff;
+}
+.boxDatepicker #datepicker .ui-datepicker-selectable.ui-datepicker-current-day .ui-state-active {
+  background: #e51313;
+}
+
+.boxDatepicker #datepicker .next,
+.boxDatepicker #datepicker .prev {
+  position: absolute;
+  top: 58%;
+  height: 1.875rem;
+}
+
+.boxDatepicker .events .details .wrapper,
+.boxDatepicker .events .preview,
+.boxDatepicker .events .preview .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.boxDatepicker #datepicker .next:after,
+.boxDatepicker #datepicker .next:before,
+.boxDatepicker #datepicker .prev:after,
+.boxDatepicker #datepicker .prev:before {
+  content: "";
+  display: block;
+  height: .125rem;
+  width: .9375rem;
+  background-color: #505050;
+  margin-top: .5rem;
+}
+
+.boxDatepicker #datepicker .next.inactive:after,
+.boxDatepicker #datepicker .next.inactive:before,
+.boxDatepicker #datepicker .prev.inactive:after,
+.boxDatepicker #datepicker .prev.inactive:before {
+  background-color: #a5a39f;
+}
+
+.boxDatepicker #datepicker .next:after,
+.boxDatepicker #datepicker .prev:before {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.boxDatepicker #datepicker .next:before,
+.boxDatepicker #datepicker .prev:after {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.boxDatepicker #datepicker .prev {
+  left: -.8125rem;
+}
+
+.boxDatepicker #datepicker .next {
+  right: -.8125rem;
+}
+
+.boxDatepicker .events,
+.boxDatepicker .paginationDatepicker {
+  position: relative;
+  overflow: hidden;
+  border-top: .0625rem solid #a5a5a5;
+}
+
+.boxDatepicker .events a,
+.boxDatepicker .events p,
+.boxDatepicker .paginationDatepicker a,
+.boxDatepicker .paginationDatepicker p {
+  font-family: Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  margin: 0 0 .5rem;
+  color: #323232;
+}
+
+.boxDatepicker .events .preview a,
+.newsDetailPagination a {
+  font-family: 'MetaProCondBook', sans-serif;
+}
+
+.boxDatepicker .events {
+  margin-top: 1.25rem;
+}
+
+.boxDatepicker .events .details {
+  display: block;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+
+.boxDatepicker .events .details,
+.boxDatepicker .events .preview {
+  padding-top: .75rem;
+}
+
+.boxDatepicker .events .details .date,
+.boxDatepicker .events .preview .date {
+  font-weight: 700;
+}
+
+.boxDatepicker .events .details .wrapper p,
+.boxDatepicker .events .preview .wrapper p {
+    float: left;
+    width: 50%;
+}
+
+.boxDatepicker .events .preview {
+  border-bottom: .0625rem solid #a5a5a5;
+  padding-bottom: .5rem;
+}
+
+.boxDatepicker .events .preview a {
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  color: #e51313;
+  margin: 0;
+}
+
+.boxDatepicker .events .preview a:hover {
+  color: #323232;
+}
+
+.boxDatepicker .events .preview a:after {
+  content: "»";
+  padding-left: .5rem;
+  vertical-align: -.0625rem;
+  font-size: 2.125rem;
+  margin-right: .3125rem;
+}
+
+.boxDatepicker .events .preview:nth-child(3) {
+  border: none;
+}
+
+.boxDatepicker .events .details {
+  overflow: hidden;
+  margin-bottom: .75rem;
+}
+
+.boxDatepicker .events .details h2,
+.boxDatepicker .events .details h3,
+.boxDatepicker .events .details h4,
+.boxDatepicker .events .details h5,
+.boxDatepicker .events .details h6 {
+  font-family: 'MetaProCondBook', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.navigation-large-up-sub .lvl3.places .index,
+.open-sign {
+  font-weight: 700;
+}
+
+.boxDatepicker .events .details h2,
+.boxDatepicker .events .details h3,
+.boxDatepicker .events .details h4,
+.boxDatepicker .events .details h5,
+.boxDatepicker .events .details h6,
+.boxDatepicker .events .details p {
+  margin-bottom: .75rem;
+}
+
+.boxDatepicker .events .details .wrapper p {
+  margin: 0;
+}
+
+.boxDatepicker .paginationDatepicker {
+  padding-top: .75rem;
+  text-align: center;
+  height: 1.875rem;
+}
+
+.boxDatepicker .paginationDatepicker .back {
+  display: block;
+}
+
+.boxDatepicker .paginationDatepicker .back,
+.boxDatepicker .paginationDatepicker .browse {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: .75rem;
+}
+
+.boxDatepicker .paginationDatepicker .back p a,
+.boxDatepicker .paginationDatepicker .browse p a {
+  color: #323232;
+  font-size: .875rem;
+  padding: 0 .375rem;
+  text-transform: none;
+}
+
+.boxDatepicker .paginationDatepicker .back .inactive,
+.boxDatepicker .paginationDatepicker .browse .inactive {
+  color: #969696;
+  cursor: text;
+}
+
+.boxDatepicker .paginationDatepicker .back .inactive:hover,
+.boxDatepicker .paginationDatepicker .browse .inactive:hover {
+  color: #969696;
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+  .boxDatepicker #datepicker .prev {
+    left: -.5rem;
+  }
+
+  .boxDatepicker #datepicker .next {
+    right: -.5rem;
+  }
+
+  .boxDatepicker .events,
+  .boxDatepicker .paginationDatepicker {
+    margin-top: 0;
+    margin-left: .9375rem;
+  }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+  .boxDatepicker {
+    margin-top: 1.25rem;
+    height: calc(100% - 20px);
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .boxDatepicker {
+    margin-top: 1.875rem;
+    height: calc(100% - 30px);
+  }
+}

@@ -1,0 +1,60 @@
+
+/*--------------------------------------------------------------
+ * # Our Team
+ * ------------------------------------------------------------*/
+
+.our-team h1.headline {
+    margin-top: .25rem;
+}
+
+.our-team .people {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.people .person-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font: 1.75rem/1.5 'MetaProCondBook', sans-serif;
+    text-align: center;
+ 	letter-spacing: -.03125rem;
+}
+
+.people .person-descr {
+ 	margin-top: 0;
+ 	margin-bottom: 40px;
+ 	font-size: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 47.9375em) {
+
+    .our-team .person img {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .our-team .people {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .our-team .person img {
+        max-width: 324px;
+    }
+
+}
+
+@media screen and (min-width: 64em) {
+
+    .our-team .person img {
+        max-width: 254px;
+    }
+    
+}

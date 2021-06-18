@@ -1,0 +1,426 @@
+/*--------------------------------------------------------------
+ * # Stage
+ * ------------------------------------------------------------*/
+
+.stage {
+    position: relative;
+}
+
+.stage .headline {
+    margin-bottom: .75rem;
+    font-size: 1.5625rem;
+    line-height: 1.9375rem;
+    letter-spacing: -.00625rem;
+    font-weight: normal;
+    color: #e51717;
+}
+
+.stage p:last-child {
+    margin-bottom: 0;
+}
+
+.stage .button {
+    margin: 0;
+}
+
+.stage .stageInfo {
+    position: absolute;
+    bottom: .625rem;
+    left: .625rem;
+    right: .625rem;
+    height: 7.9375rem;
+    padding: .8125rem .75rem .625rem;
+}
+
+.stage .stageInfo h2 {
+    color: #fff;
+}
+
+.stage .stageInfoLink {
+    font: 1.25rem 'MetaProCondBook', sans-serif;
+}
+
+.stage .stageInfoLink:after {
+    content: '»';
+    color: #505050;
+}
+
+// .stage .stageInfoLink a {
+//   color: #e51717;
+// }
+
+.stage .slideContent,
+.stage .stageContent {
+    height: 17.5rem;
+    position: relative;
+}
+
+.stage .slideContent h3 {
+    margin-top: 0;
+}
+
+// .stage .overlayBlurImage,
+.stage .bgImage {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.stage .bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center top;
+}
+
+.stage.small .bgImage {
+    background-position: center top;
+}
+
+// .stage .overlayBlurImage {
+//     position: absolute;
+//     bottom: .625rem;
+//     left: .625rem;
+//     width: calc(100% - 20px);
+//     height: 7.9375rem;
+//     filter: blur(5px);
+//     background-position: center bottom -10px;
+//     background-size: calc(100% + 20px);
+// }
+
+.stage .slick-dots {
+    position: absolute;
+    right: 1.3125rem;
+    bottom: 1.8125rem;
+    z-index: 1000;
+    margin: 0;
+}
+
+.stage .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+// .stage .stageContent .overlayBlurImage,
+.stage .stageContent .stageInfo {
+    height: 5.6875rem;
+}
+
+.stage.small {
+    margin-bottom: 0;
+}
+
+// .stage.small .overlayBlurImage,
+.stage.small .stageInfo,
+.stage.verticalAlign .stageInfo {
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.stage.small .stageInfo p,
+.stage.small .stageInfo h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 130%;
+}
+
+@media only screen and (max-width: 47.9375em) {
+
+    // .stage .overlayBlurImage {
+    //     background-position: center top -8.9375rem;
+    // }
+
+    // .stage.small .overlayBlurImage {
+    //     background-position: center top -10.625rem;
+    // }
+
+    // .stage:not(.slider) .overlayBlurImage {
+    //     background-position: center top -11.1875rem;
+    // }
+
+    .stage:not(.slider) .stageInfo {
+        display: table;
+        left: auto;
+        right: auto;
+        margin: 0 .625rem;
+    }
+
+    .stage:not(.slider) .stageInfo .headline {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+}
+
+@media only screen and (min-width: 48em) and (max-width: 63.9375em) {
+
+    // .stage .overlayBlurImage {
+    //     background-position: center top -17.8125rem;
+    // }
+
+    // .stage.small .overlayBlurImage {
+    //     background-position: left -24.0625rem top -.9375rem;
+    // }
+
+    // .stage.small .overlayBlurImage,
+    .stage.small .stageInfo {
+        left: auto;
+        width: 21.75rem;
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+    .stage .slideContent,
+    .stage .stageContent {
+        min-height: 28.4375rem;
+    }
+
+    // .stage .overlayBlurImage,
+    .stage .stageInfo {
+        height: 9.375rem;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        left: 1.25rem;
+    }
+
+    .stage .stageInfo {
+        padding-right: 1.1875rem;
+        padding-bottom: .9375rem;
+        padding-left: 1.1875rem;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .stage .stageInfo .headline {
+        margin-bottom: .3125rem;
+        font-size: 1.75rem;
+        // временно
+        // margin-top: .3125rem;
+    }
+
+    .stage .stageInfo p:not(.headline) {
+        margin-bottom: .75rem;
+        line-height: 1.4375rem;
+    }
+
+    // .stage .overlayBlurImage {
+    //     width: calc(100% - 40px);
+    //     background-size: calc(100% + 40px);
+    // }
+
+    .stage .slick-dots {
+        right: 2.75rem;
+        bottom: 2.8125rem;
+    }
+
+    // .stage .stageContent .overlayBlurImage,
+    .stage .stageContent .stageInfo {
+        height: 9.375rem;
+    }
+
+    .stage.small .stageContent {
+        height: 10rem;
+        max-height: 10rem;
+        min-height: 10rem;
+        min-height: auto;
+    }
+
+    // .stage.small .overlayBlurImage,
+    .stage.small .stageInfo {
+        bottom: .9375rem;
+        right: .9375rem;
+        left: 24.0625rem;
+        top: .9375rem;
+        height: auto;
+    }
+
+    // .stage.small .overlayBlurImage {
+    //     width: auto;
+    //     background-size: calc(100% + 385px + 15px);
+    //     background-position: left -24.0625rem bottom -.9375rem;
+    // }
+
+    .stage.small .stageInfo {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        // padding-top: 3.5%;
+        // padding-bottom: 3.5%;
+    }
+
+    // .stage.small .stageInfo.certificate {
+    //   padding: .8125rem .75rem .625rem;
+    // }
+
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+
+    .stage.small .stageInfo {
+        left: 38.125rem;
+    }
+
+    // .stage .overlayBlurImage {
+    //     background-position: left -38.125rem top -2.5rem;
+    // }
+
+    // .stage.small .overlayBlurImage {
+    //     background-position: left -38.125rem top -2.5rem;
+    // }
+
+    // .stage.small .overlayBlurImage,
+    // .stage.small .overlayBlurImage {
+    //     background-size: calc(100% + 610px + 40px);
+    //     background-size: -webkit-calc(100% + 610px + 40px);
+    //     background-position: left -38.125rem bottom -2.5rem;
+    // }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+    // .stage .stageContent .overlayBlurImage,
+    .stage .stageContent .stageInfo {
+        height: auto;
+    }
+
+    .stage.small .stageContent {
+        height: 12.5rem;
+        max-height: 12.5rem;
+        min-height: 12.5rem;
+    }
+
+    // .stage.small .overlayBlurImage,
+    .stage.small .stageInfo {
+        right: 2.5rem;
+        top: 2.5rem;
+        bottom: 2.5rem;
+    }
+
+    .stage.small .stageInfo {
+        padding: 2.5% 2.1875rem;
+    }
+
+    .stage .slideContent,
+    .stage .stageContent {
+        min-height: 27.1875rem;
+    }
+
+    // .stage .overlayBlurImage,
+    .stage .stageInfo {
+        height: auto;
+        top: 2.5rem;
+        right: 2.5rem;
+        bottom: 2.5rem;
+        left: 38.125rem;
+    }
+
+    // .stage .overlayBlurImage {
+    //     width: auto;
+    //     background-size: calc(100% + 610px + 40px);
+    //     background-position: left -38.125rem bottom -2.5rem;
+    // }
+
+    .stage .stageInfo {
+        padding: 6% 3%;
+    }
+
+    .stage .stageInfo .headline {
+        font-size: 1.625rem;
+        margin-bottom: 1.25rem;
+        line-height: 2.125rem;
+    }
+
+    .stage .stageInfo p:not(.headline) {
+        font-size: .875rem;
+        line-height: 1.375rem;
+        margin-bottom: 1.5625rem;
+    }
+
+    .stage .stageInfo .button {
+        font-size: 1rem;
+    }
+
+    .stage .slick-dots {
+        bottom: 3.75rem;
+        right: 2.5rem;
+        width: auto;
+        left: 38.125rem;
+    }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+    .stage .slideContent,
+    .stage .stageContent {
+        min-height: 28.4375rem;
+    }
+
+    // .stage .overlayBlurImage,
+    .stage .stageInfo {
+        right: 2.5rem;
+        bottom: 2.5rem;
+        left: auto;
+        width: 25.3125rem;
+    }
+
+    // .stage .overlayBlurImage {
+    //     background-position: left -48.4375rem top -2.5rem;
+    // }
+
+    // .stage .overlayBlurImage {
+    //     background-size: 76.25rem auto;
+    //     background-position: left -48.4375rem bottom -2.5rem;
+    // }
+
+    // .stage.small .overlayBlurImage {
+    //     background-position: left -48.4375rem top -2.5rem;
+    // }
+
+    .stage .stageInfo .headline {
+        // font-size: 1.75rem;
+        font-size: 1.625rem;
+        line-height: 2.1875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .stage .stageInfo p:not(.headline) {
+        font-size: 1rem;
+        line-height: 1.4375rem;
+        margin-bottom: 1.5625rem;
+    }
+
+    .stage .stageInfo .button {
+        font-size: 1.125rem;
+    }
+
+    .stage .slick-dots {
+        width: 25.3125rem;
+        right: 2.5rem;
+        left: auto;
+    }
+
+    .stage.small .stageContent {
+        height: 13.125rem;
+        max-height: 13.125rem;
+        min-height: 13.125rem;
+    }
+
+    // .stage.small .overlayBlurImage,
+    .stage.small .stageInfo {
+        width: 25.3125rem;
+        left: auto;
+        // padding-top: 4%;
+        // padding-bottom: 4%;
+    }
+
+    // .stage.small .overlayBlurImage {
+    //     background-size: 76.25rem auto;
+    //     background-position: left -48.4375rem bottom -2.5rem;
+    // }
+    
+}

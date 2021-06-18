@@ -1,0 +1,26 @@
+
+/*--------------------------------------------------------------
+ * # Fixedsticky
+ * ------------------------------------------------------------*/
+
+.fixedsticky {
+    position: sticky;
+}
+
+.fixedsticky-withoutfixedfixed .fixedsticky-off,
+.fixed-supported .fixedsticky-off {
+    position: static;
+}
+
+.fixedsticky-withoutfixedfixed .fixedsticky-on,
+.fixed-supported .fixedsticky-on {
+    position: fixed;
+}
+
+.fixedsticky-dummy {
+    display: none;
+}
+
+.fixedsticky-on + .fixedsticky-dummy {
+    display: block;
+}

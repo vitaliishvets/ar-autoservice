@@ -1,0 +1,50 @@
+
+/*--------------------------------------------------------------
+ * # Advantages
+ * ------------------------------------------------------------*/
+
+.advantages h1.headline {
+    margin-top: .25rem;
+}
+
+.advantages .advantages-items {
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #fff;
+	border: none;
+}
+
+.advantages-item {
+	margin-bottom: 5px;
+}
+
+.item-img {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 2rem;
+	vertical-align: middle;
+}
+
+.item-text {
+	display: inline-block;
+	width: 80%;
+	line-height: 1.5;
+	margin-left: .3125rem;
+}
+
+.items-note {
+	font-family: 'MetaProCondBold', sans-serif;
+	font-size: 1.25rem;
+	margin-top: 20px;
+	// line-height: 1.8;
+}
+
+
+@media screen and (max-width: 47.9375em) {
+
+	.item-img {
+		vertical-align: top;
+	}
+
+}

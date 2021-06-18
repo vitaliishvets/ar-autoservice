@@ -1,0 +1,36 @@
+
+/*--------------------------------------------------------------
+ * # Offers
+ * ------------------------------------------------------------*/
+ 
+.offers h1.headline {
+    margin-top: .25rem;
+}
+
+.offers figure {
+    margin: 0;
+    padding: 0;
+}
+
+.offers figure img {
+    width: 100%;
+}
+
+// .offers figcaption {
+//     font-size: .875rem;
+//     line-height: 1.2;
+//     margin-top: 5px;
+//     font-family: 'MetaProCondBook', sans-serif;
+//     color: #8a8a8a;
+// }
+
+.offers hr {
+    border: solid #c8c8c8;
+    border-width: .0625rem 0 0;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.offers hr:last-child {
+    display: none;
+}

@@ -1,0 +1,79 @@
+
+/*--------------------------------------------------------------
+ * # Service and price table for Services article page 
+ * ------------------------------------------------------------*/
+.service-and-price-wrapper {
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 1.75rem;
+}
+
+.service-and-price-table {
+	width: 100%;
+}
+
+.service-and-price-table .table-title {
+	background: #e8e8e8;
+}
+
+.service-and-price-table .table-title th {
+	padding: 5px;
+}
+
+.service-and-price-table .table-title th:first-child {
+    border-top-left-radius: .3125rem;
+}
+
+.service-and-price-table .table-title th:nth-child(2) {
+    border-top-right-radius: .3125rem;
+}
+
+.service-and-price-table .table-descr td:first-child {
+    border-bottom-left-radius: .3125rem;
+}
+
+.service-and-price-table .table-descr td:nth-child(2) {
+    border-bottom-right-radius: .3125rem;
+}
+
+.service-and-price-table .table-descr {
+	background: #f3f3f3;
+}
+
+.service-and-price-table .work-name {
+	width: 70%;
+	padding: .9375rem .625rem;
+	text-align: center;
+	text-transform: none;
+}
+
+.service-and-price-table .work-price {
+	width: 30%;
+	padding: .0625rem .625rem;
+	text-align: center;
+}
+
+.service-and-price-table .work-name,
+.service-and-price-table .work-price {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font: 1.5rem/1 'MetaProCondBook', sans-serif;
+}
+
+@media only screen and (max-width: 63.9375em) {
+    
+    .service-and-price-table .work-name,
+    .service-and-price-table .work-price {
+        font-size: 1.625rem;
+    }
+
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+
+    .service-and-price-table .work-name,
+    .service-and-price-table .work-price {
+        font-size: 1.625rem;
+    }
+
+}

@@ -1,0 +1,213 @@
+
+/*--------------------------------------------------------------
+ * # Accordion
+ * ------------------------------------------------------------*/
+
+.accordion {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.accordion .boxRTE {
+    margin-top: 0;
+}
+
+.accordion+.accordion {
+    margin-top: 0.625rem !important;
+}
+
+.accordion:after,
+.accordion:before {
+    content: '';
+    display: table;
+}
+
+.accordion .accordion-navigation,
+.accordion dd {
+    display: block;
+    margin-bottom: 0 !important;
+}
+
+.accordion .accordion-navigation.active > a,
+.accordion dd.active > a {
+    background: #e8e8e8;
+    color: #222;
+}
+
+.accordion .accordion-navigation > a,
+.accordion dd > a {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #323232;
+    background: #efefef;
+    padding: 1rem;
+}
+
+.accordion .accordion-navigation > a:hover,
+.accordion dd>a:hover {
+    background: #e3e3e3;
+}
+
+.accordion .accordion-navigation > .content,
+.accordion dd>.content {
+    display: none;
+    padding: .625rem;
+}
+
+.accordion .accordion-navigation > .content.active,
+.accordion dd>.content.active {
+    background: #fff;
+    display: block;
+}
+
+.accordion .accordion-navigation ul li {
+    list-style: 1.5;
+    margin-bottom: .3125rem;
+}
+
+.accordion .accordion-navigation > a {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding-left: 0;
+    font: 1.25rem/1 'MetaProCondBook', sans-serif;
+    text-transform: uppercase;
+}
+
+.accordion .accordion-navigation > a h2 {
+    font-size: 1.25rem;
+}
+
+.accordion .accordion-navigation:not(:last-child) {
+    margin-bottom: .625rem !important;
+}
+
+/* Icon */
+
+.accordion .accordion-navigation .icon:empty {
+    width: 1.25rem;
+}
+
+.accordion .accordion-navigation .icon {
+    width: 5rem;
+    text-align: center;
+}
+
+.accordion .accordion-navigation .svg-icon {
+    fill: $cs-color-icon-based;
+    width: 45px;
+    height: 45px;
+}
+
+.accordion .accordion-navigation.active .svg-icon {
+    fill: $cs-color-icon-active;
+}
+
+.accordion .accordion-navigation .right {
+    padding-right: 1.4375rem;
+    font: 1rem 'MetaProCondBook', sans-serif;
+    text-align: right;
+    color: #e51717;
+}
+
+.accordion .accordion-navigation .right span {
+    position: relative;
+    display: inline-block;
+}
+
+.accordion .accordion-navigation .right:after {
+    display: none;
+}
+
+.accordion .accordion-navigation .right span:after {
+    position: absolute;
+    right: -1.25rem;
+    top: -8%;
+    display: block;
+    font: 1.5625rem/1 'MetaProCondBold', sans-serif;
+    content: '›';
+    transform: rotate(90deg);
+}
+
+.accordion .accordion-navigation.active .right span:after {
+    transform: rotate(270deg);
+    right: -.75rem;
+}
+
+.accordion .accordion-navigation .icon,
+.accordion .accordion-navigation .left,
+.accordion .accordion-navigation .right {
+    float: none !important;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.accordion .accordion-navigation .left h2,
+.accordion .accordion-navigation .left h3 {
+    line-height: 1;
+    font-family: 'MetaProCondBook', 'Roboto Condensed', sans-serif;
+}
+
+.accordion .accordion-navigation.active .right:after {
+    transform: rotate(-90deg);
+}
+
+.accordion .accordion-navigation .content {
+    display: block;
+    max-height: 0;
+    padding: 0 .9375rem;
+    overflow: hidden;
+}
+
+.accordion .accordion-navigation.active .content.active {
+    max-height: 312.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.disable-text-transform {
+    text-transform: none !important;
+}
+
+@media only screen and (min-width: 48em) {
+
+    .accordion .accordion-navigation .title {
+        font-size: 1.625rem;
+    }
+
+    .accordion .accordion-navigation .right {
+        vertical-align: bottom;
+        line-height: 1;
+        font-size: 1.125rem;
+    }
+
+    .accordion .accordion-navigation .right:after {
+        line-height: 1;
+    }
+
+    .accordion .accordion-navigation .right span:after {
+        top: -10%;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+    .accordion .accordion-navigation .right {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+    .accordion .accordion-navigation .title {
+        font-size: 1.75rem;
+    }
+
+    .accordion .accordion-navigation .right {
+        font-size: 1.125rem;
+    }
+    
+}
