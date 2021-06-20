@@ -68,6 +68,7 @@ summary {
     display: block;
 }
 
+/* Не используемые стили - начало */
 audio,
 canvas,
 progress,
@@ -85,6 +86,7 @@ audio:not([controls]) {
 template {
     display: none;
 }
+/* Не используемые стили - конец */
 
 a {
     background-color: transparent;
@@ -95,6 +97,7 @@ a:hover {
     outline: 0;
 }
 
+/* Не используемые стили - начало */
 abbr[title] {
     border-bottom: 1px dotted;
 }
@@ -102,12 +105,14 @@ abbr[title] {
 dfn {
     font-style: italic;
 }
+/* Не используемые стили - конец */
 
 h1 {
     font-size: 2em;
     margin: .67em 0;
 }
 
+/* Не используемые стили - начало */
 mark {
     background: #ff0;
     color: #000;
@@ -132,6 +137,7 @@ sup {
 sub {
     bottom: -.25em;
 }
+/* Не используемые стили - конец */
 
 img {
     border: 0;
@@ -141,15 +147,20 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+/* Стили переопределяются - начало */
 figure {
     margin: 1em 40px;
 }
+/* Стили переопределяются - конец */
 
 hr {
-    box-sizing: content-box;
+    border: solid #444;
+    border-width: .0625rem 0 0;
     height: 0;
+    margin-top: 1.25rem;
 }
 
+/* Не используемые стили - начало */
 pre {
     overflow: auto;
 }
@@ -270,6 +281,7 @@ textarea {
 optgroup {
     font-weight: bold;
 }
+/* Неиспользуемые стили - конец */
 
 table {
     border-collapse: collapse;
@@ -308,6 +320,7 @@ body {
     position: relative;
 }
 
+/* Неиспользуемые стили - начало */
 .button,
 .extraPadding.border,
 button {
@@ -333,6 +346,7 @@ button {
     background-color: #f78654;
     background-image: linear-gradient(#f78654, #f1633a);
 }
+/* Неиспользуемые стили - конец */
 
 h1,
 h2,
@@ -344,12 +358,14 @@ p {
     text-rendering: optimizeLegibility;
 }
 
+/* Неиспользуемые стили - начало */
 .button,
 .vevent abbr,
 a,
 button {
     text-decoration: none;
 }
+/* Неиспользуемые стили - конец */
 
 .accordion:after,
 .clearfix:after,
@@ -414,6 +430,7 @@ meta.foundation-data-attribute-namespace {
     font-family: false;
 }
 
+/* Неиспользуемые стили - начало */
 .button,
 a:hover,
 button {
@@ -431,6 +448,7 @@ button {
 .mqa-display object {
     max-width: none !important;
 }
+/* Неиспользуемые стили - конец */
 
 .left {
     float: left !important;
@@ -446,6 +464,7 @@ button {
     display: table;
 }
 
+/* Неиспользуемые стили - начало */
 .hide {
     display: none;
 }
@@ -458,15 +477,18 @@ button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* Неиспользуемые стили - конец */
 
 img {
     max-width: 100%;
     height: auto;
+    // Данное свойство используется только в IE с 7 версии
     -ms-interpolation-mode: bicubic;
     display: inline-block;
     vertical-align: middle;
 }
 
+/* Неиспользуемые стили - начало */
 select {
     width: 100%;
 }
@@ -492,7 +514,7 @@ select:focus {
 .extraMargin h2 > .extraMargin {
     margin-bottom: 1.875rem;
 }
-
+/* Неиспользуемые стили - конец */
 .extraPadding {
     padding: 0 .625rem;
     margin: .9375rem 0;
@@ -506,6 +528,7 @@ select:focus {
 
 }
 
+/* Неиспользуемые стили - начало */
 .font-60 {
     font-size: 60%;
 }
@@ -525,15 +548,13 @@ select:focus {
 .font-140 {
     font-size: 140%;
 }
-
-.colorGrey47 {
-    color: #787878;
-}
+/* Неиспользуемые стили - конец */
 
 .colorRed {
     color: #e51717;
 }
 
+/* Неиспользуемые стили - начало */
 .green {
     color: #288b1a;
 }
@@ -553,6 +574,7 @@ select:focus {
 .text-justify {
     text-align: justify !important;
 }
+/* Неиспользуемые стили - конец */
 
 .noWrap {
     white-space: nowrap;
@@ -562,11 +584,6 @@ select:focus {
 .wrap {
     white-space: wrap;
     color: inherit;
-}
-
-.column hr {
-    margin-top: 1.25rem;
-    margin-bottom: 0;
 }
 
 .headline.noArrows {
@@ -584,7 +601,6 @@ select:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    
 }
 
 a.linkFullSize {
@@ -597,14 +613,15 @@ a.linkFullSize {
     margin: -1.25rem;
     padding: 1.25rem;
 }
-
-@media only screen and (max-width: 47.9375em) {
-
-    .extraPadding .headline {
-        margin-bottom: .625rem;
-    }
-
-}
+/* Неиспользуемые стили - начало / стиль переопределяется */
+// @media only screen and (max-width: 47.9375em) {
+    
+    //     .extraPadding .headline {
+        //         margin-bottom: .625rem;
+        //     }
+        
+        // }
+/* Неиспользуемые стили - конец / стиль переопределяется */
 
 // @media only screen and (min-width: 48em) {
 //     .paddingBox {
@@ -625,8 +642,10 @@ a.linkFullSize {
         bottom: .9375rem;
     }
     
+    /* Неиспользуемые стили - начало */
     .button {
         padding: .125rem .4375rem;
     }
-    
+    /* Неиспользуемые стили - конец */
+
 }
