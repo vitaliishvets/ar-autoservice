@@ -3973,6 +3973,7 @@ ul li ul {
     margin-bottom: 0;
 }
 
+/* Неиспользуемые стили - начало */
 ul.circle,
 ul.disc,
 ul.square {
@@ -4041,7 +4042,9 @@ abbr {
 abbr[title] {
     border-bottom: 1px dotted #DDD;
 }
+/* Неиспользуемые стили - конец */
 
+/* Неиспользуемые стили - начало */
 blockquote {
     padding: .5625rem 1.25rem 0 1.1875rem;
     border-left: 1px solid #DDD;
@@ -4073,9 +4076,6 @@ blockquote {
     margin: 0 0 1.25rem;
 }
 
-
-/* Start - Do Not Used */
-
 .vcard {
     display: inline-block;
     border: 1px solid #DDD;
@@ -4096,38 +4096,36 @@ blockquote {
     border: none;
     padding: 0 .0625rem;
 }
+/* Неиспользуемые стили - конец */
 
-
-/* End - Do Not Used */
-
-@media only screen and (min-width: 48em) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        line-height: 1.4;
-    }
-    h1 {
-        font-size: 2.75rem;
-    }
-    h2 {
-        font-size: 2.3125rem;
-    }
-    h3 {
-        font-size: 1.6875rem;
-    }
-    h4 {
-        font-size: 1.4375rem;
-    }
-    h5 {
-        font-size: 1.125rem;
-    }
-    h6 {
-        font-size: 1rem;
-    }
-}
+// @media only screen and (min-width: 48em) {
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5,
+//     h6 {
+//         line-height: 1.4;
+//     }
+//     h1 {
+//         font-size: 2.75rem;
+//     }
+//     h2 {
+//         font-size: 2.3125rem;
+//     }
+//     h3 {
+//         font-size: 1.6875rem;
+//     }
+//     h4 {
+//         font-size: 1.4375rem;
+//     }
+//     h5 {
+//         font-size: 1.125rem;
+//     }
+//     h6 {
+//         font-size: 1rem;
+//     }
+// }
 
 @media print {
     blockquote,
@@ -4192,11 +4190,11 @@ blockquote {
     list-style: none;
 }
 
-.f-dropdown.content> :last-child,
-.f-dropdown.drop-left> :last-child,
-.f-dropdown.drop-right> :last-child,
-.f-dropdown.drop-top> :last-child,
-.f-dropdown> :last-child {
+.f-dropdown.content > :last-child,
+.f-dropdown.drop-left > :last-child,
+.f-dropdown.drop-right > :last-child,
+.f-dropdown.drop-top > :last-child,
+.f-dropdown > :last-child {
     margin-bottom: 0;
 }
 
@@ -4224,8 +4222,8 @@ blockquote {
 }
 
 .f-dropdown.drop-left,
-.f-dropdown.drop-left> :first-child,
-.f-dropdown.drop-right> :first-child,
+.f-dropdown.drop-left > :first-child,
+.f-dropdown.drop-right > :first-child,
 .f-dropdown> :first-child {
     margin-top: 0;
 }
@@ -4291,7 +4289,7 @@ blockquote {
 
 .f-dropdown.drop-right:before {
     border: 6px inset;
-    border-color: transparent #FFF transparent transparent;
+    border-color: transparent #fff transparent transparent;
     border-right-style: solid;
     top: 10px;
     left: -12px;
@@ -4311,7 +4309,7 @@ blockquote {
     display: none;
     left: -9999px;
     position: absolute;
-    background: #FFF;
+    background: #fff;
     border: 1px solid #464646;
     font-size: .8125rem;
     height: auto;
@@ -4336,7 +4334,7 @@ blockquote {
 
 .f-dropdown.drop-left:before {
     border: 6px inset;
-    border-color: transparent transparent transparent #FFF;
+    border-color: transparent transparent transparent #fff;
     border-left-style: solid;
     top: 10px;
     right: -12px;
@@ -4356,7 +4354,7 @@ blockquote {
     display: none;
     left: -9999px;
     position: absolute;
-    background: #FFF;
+    background: #fff;
     border: 1px solid #464646;
     font-size: .8125rem;
     height: auto;
@@ -4377,8 +4375,8 @@ blockquote {
     position: absolute;
 }
 
-.f-dropdown.content> :first-child,
-.f-dropdown.drop-top> :first-child {
+.f-dropdown.content > :first-child,
+.f-dropdown.drop-top > :first-child {
     margin-top: 0;
 }
 
@@ -4388,7 +4386,7 @@ blockquote {
 
 .f-dropdown.drop-top:before {
     border: 6px inset;
-    border-color: #FFF transparent transparent;
+    border-color: #fff transparent transparent;
     border-top-style: solid;
     bottom: -12px;
     left: 10px;
@@ -4427,19 +4425,13 @@ blockquote {
     left: -9999px;
     margin-left: 0;
     position: absolute;
-    background: #FFF;
+    background: #fff;
     border: 1px solid #464646;
     font-size: .8125rem;
     height: auto;
     padding: 1.25rem;
     width: 100%;
     z-index: 89;
-}
-
-.boxInfo,
-.boxInfo .infoArea .overlayBlurImage {
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .f-dropdown.content.open {
@@ -4475,40 +4467,40 @@ blockquote {
     left: 0 !important;
 }
 
-[class*=block-grid-] {
-    display: block;
-    padding: 0;
-    margin: 0;
-}
+// [class*=block-grid-] {
+//     display: block;
+//     padding: 0;
+//     margin: 0;
+// }
 
-[class*=block-grid-]:after,
-[class*=block-grid-]:before {
-    content: " ";
-    display: table;
-}
+// [class*=block-grid-]:after,
+// [class*=block-grid-]:before {
+//     content: " ";
+//     display: table;
+// }
 
-[class*=block-grid-]>li {
-    display: block;
-    float: left;
-    height: auto;
-    padding: 0;
-}
+// [class*=block-grid-] > li {
+//     display: block;
+//     float: left;
+//     height: auto;
+//     padding: 0;
+// }
 
-[class*=block-grid-] img {
-    min-width: 100%;
-}
+// [class*=block-grid-] img {
+//     min-width: 100%;
+// }
 
-[class*=block-grid-]>li>a,
-[class*=block-grid-]>li>span {
-    display: table-cell;
-    vertical-align: middle;
-}
+// [class*=block-grid-] > li > a,
+// [class*=block-grid-]> li> span {
+//     display: table-cell;
+//     vertical-align: middle;
+// }
 
-[class*=block-grid-]>li:hover {
-    position: relative;
-    z-index: 1;
-    border-color: #d2d2d3;
-}
+// [class*=block-grid-] > li:hover {
+//     position: relative;
+//     z-index: 1;
+//     border-color: #d2d2d3;
+// }
 
 // @media only screen {
 //   .small-block-grid-1 > li {

@@ -8,11 +8,12 @@
     height: 19.5625rem;
     margin-top: 1.25rem;
     padding: 1.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #f0f0f0;
     background-image: linear-gradient(#f0f0f0, #d2d2d3);
     background-position: top;
     border-top: .125rem solid #e51313;
-    // box-shadow: 0.1rem 0.1rem 10px rgba(122,122,122,0.5);
 }
 
 .boxInfo .headline {
