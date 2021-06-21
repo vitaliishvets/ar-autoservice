@@ -1,0 +1,56 @@
+
+/*--------------------------------------------------------------
+ * # Service Style (Bootstrap)
+ * ------------------------------------------------------------*/
+
+section.services .thumbnail {
+    border-radius: 0px;
+}
+
+section.services .thumbnail h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+section.services .thumbnail p {
+    color: #778191;
+    line-height: 24px;
+}
+
+.service-menu .nav-pills>li.active>a,
+.service-menu .nav-pills>li.active>a:hover,
+.service-menu .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.service-menu .nav-pills>li>a {
+    border-radius: 0px;
+}
+
+.service-menu a {
+    color: #334550;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.service-menu a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.service-menu .nav-stacked>li:first-child {
+    border-top: 1px solid #dadada;
+}
+
+.service-menu .nav-stacked>li {
+    margin-top: 0px;
+    margin-left: 0;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
