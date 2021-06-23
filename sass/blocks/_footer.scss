@@ -69,7 +69,7 @@
     display: block;
 }
 
-.footer .organization-address:before {
+.footer .organization-address::before {
     content: '';
     display: inline-block;
     width: .75rem;
@@ -79,7 +79,7 @@
     background-repeat: no-repeat;
 }
 
-.footer .organization-tel:before {
+.footer .organization-tel a::before {
     content: '';
     display: inline-block;
     width: .75rem;
@@ -87,6 +87,11 @@
     margin-right: .625rem;
     background-image: url(/img/icons/phone-alt.svg);
     background-repeat: no-repeat;
+}
+
+.footer .organization-tel a {
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .footer p:not(.headline) {
