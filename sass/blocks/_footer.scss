@@ -98,7 +98,8 @@
     font: .8125rem/1.6 'Arial', sans-serif;
 }
 
-.footer a:hover {
+.footer a:hover,
+.footer a:focus {
     font-weight: 700;
     color: #505050;
 }
