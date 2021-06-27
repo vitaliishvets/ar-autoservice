@@ -4,19 +4,21 @@
  * ------------------------------------------------------------*/
  
 @font-face {
-    font-family: 'MetaProCondBook';
-    font-weight: normal;
+    font-family: "MetaProCondBook";
     font-style: normal;
+    font-weight: normal;
     font-display: swap;
-    src: url('../fonts/MetaProCondBook.woff2') format('woff2'),
-         url('../fonts/MetaProCondBook.woff') format('woff');
+    src: local("MetaProCondBook"),
+         url("../fonts/MetaProCondBook.woff2") format("woff2"),
+         url("../fonts/MetaProCondBook.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'MetaProCondBold';
-    font-weight: 700;
+    font-family: "MetaProCondBold";
     font-style: normal;
+    font-weight: 700;
     font-display: swap;
-    src: url('../fonts/MetaProCondBold.woff2') format('woff2'),
-         url('../fonts/MetaProCondBold.woff') format('woff');
+    src: local("MetaProCondBold"),
+         url("../fonts/MetaProCondBold.woff2") format("woff2"),
+         url("../fonts/MetaProCondBold.woff") format("woff");
 }
