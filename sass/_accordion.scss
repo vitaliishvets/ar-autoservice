@@ -104,6 +104,21 @@
     fill: $cs-color-icon-active;
 }
 
+.accordion .accordion-navigation.active .svg-icon--rotate {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
 .accordion .accordion-navigation .right {
     padding-right: 1.4375rem;
     font: 1rem 'MetaProCondBook', sans-serif;
@@ -123,7 +138,7 @@
 .accordion .accordion-navigation .right span:after {
     position: absolute;
     right: -1.25rem;
-    top: -8%;
+    top: 10%;
     display: block;
     font: 1.5625rem/1 'MetaProCondBold', sans-serif;
     content: '›';
@@ -187,7 +202,7 @@
     }
 
     .accordion .accordion-navigation .right span:after {
-        top: -10%;
+        top: -1px;
     }
 
 }
