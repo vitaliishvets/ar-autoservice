@@ -49,9 +49,10 @@
     margin: 0 .5rem;
     opacity: 1;
     // content: "/";
+    font-size: 1.125rem;
+    line-height: 0;
     color: #cacaca;
-    content: "›";
-    // font-size: 1rem;
+    content: '\203A';
 }
 
 .boxRTE .breadcrumbs .active {
