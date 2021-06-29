@@ -11,7 +11,7 @@
     src: local("MetaProCondBook"),
          url("../fonts/MetaProCondBook-subset.woff2") format("woff2"),
          url("../fonts/MetaProCondBook-subset.woff") format("woff");
-    unicode-range: U+20-39, U+3A-40, U+41-7E, U+AB, U+BB, U+CB, U+CF, U+EF, U+130, U+401, U+404, U+406-407, U+410-44F, U+451, U+454, U+456-457, U+490-491, U+2013-2015;
+    unicode-range: U+20-39, U+3A-40, U+41-7E, U+AB, U+BB, U+CB, U+CF, U+EF, U+130, U+401, U+404, U+406-407, U+410-44F, U+451, U+454, U+456-457, U+490-491, U+2039-203A, U+2013-2015;
 }
 
 @font-face {
@@ -22,5 +22,5 @@
     src: local("MetaProCondBold"),
          url("../fonts/MetaProCondBold-subset.woff2") format("woff2"),
          url("../fonts/MetaProCondBold-subset.woff") format("woff");
-    unicode-range: U+20-39, U+3A-40, U+41-7E, U+AB, U+BB, U+CB, U+CF, U+EF, U+130, U+401, U+404, U+406-407, U+410-44F, U+451, U+454, U+456-457, U+490-491, U+2013-2015;
+    unicode-range: U+20-39, U+3A-3B, U+3D, U+41-7E, U+AB, U+BB, U+CB, U+CF, U+EF, U+130, U+401, U+404, U+406-407, U+410-44F, U+451, U+454, U+456-457, U+490-491, U+2039-203A, U+2013-2015;
 }
