@@ -140,8 +140,9 @@
     right: -1.25rem;
     top: 10%;
     display: block;
-    font: 1.5625rem/1 'MetaProCondBold', sans-serif;
-    content: '›';
+    font: 1.5625rem/1 'MetaProCondBook', sans-serif;
+    // content: '›';
+    content: '\203A';
     transform: rotate(90deg);
 }
 
