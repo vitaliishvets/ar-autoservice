@@ -1,0 +1,74 @@
+
+/*--------------------------------------------------------------
+ * # Page service (404)
+ * ------------------------------------------------------------*/
+
+.page-service-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.light-header__logo:focus,
+.light-header__logo:hover {
+    opacity: .7;
+}
+
+.page-service,
+.page-service__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page-service {
+    height: calc(90vh - 120px);
+    align-items: center;
+}
+
+.page-service__image,
+.page-service__content {
+    text-align: center;
+}
+
+.page-service__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 20px 0 20px;
+}
+
+.page-service__info {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.page-service__button a {
+    display: inline-block;
+}
+
+.button {
+    color: #fff;
+    border: 2px solid #505050;
+    padding: 10px 20px;
+}
+
+.light-footer {
+    margin: 0;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.light-footer p {
+    font-size: 14px;
+    line-height: 26px;
+}
