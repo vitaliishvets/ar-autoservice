@@ -7,44 +7,74 @@
     margin-top: .25rem;
 }
 
-.advantages .advantages-items {
-	padding-left: 0;
-	padding-right: 0;
-	background-color: #fff;
-	border: none;
+.advantages-section ul li {
+    margin-bottom: 5px;
+    margin-left: 0;
+    width: 85%;
+    line-height: 25px;
+    text-indent: 0;
 }
 
-.advantages-item {
-	margin-bottom: 5px;
+.advantages-section ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
 }
 
-.item-img {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	line-height: 2rem;
-	vertical-align: middle;
+.advantages-section ul li:before {
+    background-image: url('../img/icons/check-circle.svg');
 }
 
-.item-text {
-	display: inline-block;
-	width: 80%;
-	line-height: 1.5;
-	margin-left: .3125rem;
+.advantages-section__item {
+    position: relative;
+    padding-left: 34px;
 }
 
-.items-note {
-	font-family: 'MetaProCondBold', sans-serif;
-	font-size: 1.25rem;
+.advantages-section__note {
 	margin-top: 20px;
-	// line-height: 1.8;
+	font-size: 1.25rem;
+	font-family: 'MetaProCondBold', sans-serif;
 }
 
+.advantages-section--card {
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+    padding: 1.25rem;
+    background: #fbfbfb;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+}
 
-@media screen and (max-width: 47.9375em) {
+.advantages-section--card p.headline {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+}
 
-	.item-img {
-		vertical-align: top;
-	}
+.advantages-section--card ul {
+    margin-left: 0;
+}
 
+.advantages-section--card ul li {
+    line-height: 20px;
+}
+
+.advantages-section--card ul li:before {
+    width: 20px;
+    height: 20px;
+}
+
+.advantages-section--card .advantages-section__item {
+    margin: 0;
+    font-size: .875rem;
+}
+
+.advantages-section--card .advantages-section__note {
+    margin-bottom: 0;
+    font-size: 1.125rem;
 }

@@ -45,7 +45,7 @@
 }
 
 .accordion .accordion-navigation > a:hover,
-.accordion dd>a:hover {
+.accordion dd > a:hover {
     background: #e3e3e3;
 }
 
@@ -56,13 +56,12 @@
 }
 
 .accordion .accordion-navigation > .content.active,
-.accordion dd>.content.active {
+.accordion dd > .content.active {
     background: #fff;
     display: block;
 }
 
 .accordion .accordion-navigation ul li {
-    list-style: 1.5;
     margin-bottom: .3125rem;
 }
 
