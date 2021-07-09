@@ -520,7 +520,7 @@ ul.navigation-large-up-lvl1 li a.active {
 }
 
 ul.navigation-large-up-lvl1 li a {
-    padding: .625rem .5rem;
+    padding: .625rem .625rem;
     // padding: 1.125rem 0.75rem 0.875rem;
     line-height: 1;
     color: #e51313;
@@ -548,7 +548,7 @@ ul.navigation-large-up-lvl1 li:last-child {
 @media only screen and (min-width: 64em) {
 
     .navigation-large-up-lvl1 li:first-child {
-        margin-left: 1rem;
+        margin-left: .9375rem;
     }
 
 }
@@ -560,7 +560,7 @@ ul.navigation-large-up-lvl1 li:last-child {
     // }
 
     ul.navigation-large-up-lvl1 li:first-child {
-        margin-left: .5625rem;
+        margin-left: 1.125rem;
     }
 
     ul.navigation-large-up-lvl1 a {
@@ -581,7 +581,7 @@ ul.navigation-large-up-lvl1 li:last-child {
 ul.navigation-large-up-sub > li {
     position: relative;
     display: inline-block;
-    margin-right: -.28125rem;
+    // margin-right: -.28125rem; // расскоментировать если нужен будет лишний пробел между элементами списка
 }
 
 ul.navigation-large-up-sub > li:after {
