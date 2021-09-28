@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница не найдена | АР-Автосервіс</title>
+    <title>Страница не найдена | АР-Автосервис</title>
     <meta name="description" content="Страница не найдена">
     <meta name="keywords" content="">
     <meta name="robots" content="noindex, nofollow">
