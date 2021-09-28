@@ -1,3 +1,4 @@
+<?php Header("HTTP/1.1 404 Not Found"); ?>
 <!DOCTYPE html>
 <html lang="uk-UA" prefix="og: https://ogp.me/ns#">
 <head>
@@ -5,10 +6,9 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница не найдена | АР-Автосервіс</title>
-    <meta name="description" content="Станции технического обслуживания автомобилей АР-Автосервис">
+    <meta name="description" content="Страница не найдена">
     <meta name="keywords" content="">
-    <link rel="alternate" hreflang="uk-ua" href="https://ar-autoservice.com.ua/ua/blog/index.html">
-    <link rel="alternate" hreflang="ru-ua" href="https://ar-autoservice.com.ua/blog/index.html">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
