@@ -1,10 +1,13 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /404.html
 
 User-agent: Yandex
 Allow: /
+Disallow: /404.html
 
 User-agent: *
 Allow: /
+Disallow: /404.html
 
 Sitemap: https://ar-autoservice.com.ua/sitemap.xml
