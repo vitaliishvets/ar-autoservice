@@ -11,7 +11,7 @@
                 href="https://ar-autoservice.com.ua/ru/"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/ru/</loc>
+    <loc>https://ar-autoservice.com.ua/ua/</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -19,7 +19,7 @@
                 href="https://ar-autoservice.com.ua/"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.o-nas.html</loc>
+    <loc>https://ar-autoservice.com.ua/o-nas.html</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -27,7 +27,7 @@
                 href="https://ar-autoservice.com.ua/o-nas.html"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/o-nas.html</loc>
+    <loc>https://ar-autoservice.com.ua/ua/o-nas.html</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -83,20 +83,20 @@
                 href="https://ar-autoservice.com.ua/ua/vakansii.html"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/ua/uslugi-sto.html</loc>
+    <loc>https://ar-autoservice.com.ua/ua/uslugi-sto/</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ua"
-                href="https://ar-autoservice.com.ua/uslugi-sto.html"/>
+                href="https://ar-autoservice.com.ua/uslugi-sto/"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/uslugi-sto.html</loc>
+    <loc>https://ar-autoservice.com.ua/uslugi-sto/</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="uk-ua"
-                href="https://ar-autoservice.com.ua/ua/uslugi-sto.html"/>
+                href="https://ar-autoservice.com.ua/ua/uslugi-sto/"/>
 </url>
 <url>
     <loc>https://ar-autoservice.com.ua/ua/uslugi-sto/shinomontazh-irpen-bucha.html</loc>
@@ -267,6 +267,14 @@
                 href="https://ar-autoservice.com.ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha.html"/>
 </url>
 <url>
+    <loc>https://ar-autoservice.com.ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha.html</loc>
+	<lastmod>2021-06-01</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk-ua"
+                href="https://ar-autoservice.com.ua/ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha.html"/>
+</url>
+<url>
     <loc>https://ar-autoservice.com.ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha.html</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
@@ -281,14 +289,6 @@
                 rel="alternate"
                 hreflang="ru-ua"
                 href="https://ar-autoservice.com.ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha.html"/>
-</url>
-<url>
-    <loc>https://ar-autoservice.com.ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha.html</loc>
-	<lastmod>2021-06-01</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="uk-ua"
-                href="https://ar-autoservice.com.ua/ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha.html"/>
 </url>
 <url>
     <loc>https://ar-autoservice.com.ua/ua/uslugi-sto/zamena-glushitelja-irpen-bucha.html</loc>
@@ -403,20 +403,20 @@
                 href="https://ar-autoservice.com.ua/ua/blog/zapravka-avtokondicionera-kakoe-oborudovanie-my-ispolzuem.html"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/ua/novosti.html</loc>
+    <loc>https://ar-autoservice.com.ua/ua/novosti/</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ua"
-                href="https://ar-autoservice.com.ua/novosti.html"/>
+                href="https://ar-autoservice.com.ua/novosti/"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/novosti.html</loc>
+    <loc>https://ar-autoservice.com.ua/novosti/</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="uk-ua"
-                href="https://ar-autoservice.com.ua/ua/novosti.html"/>
+                href="https://ar-autoservice.com.ua/ua/novosti/"/>
 </url>
 <url>
     <loc>https://ar-autoservice.com.ua/ua/novosti/akcija-diagnostika-hodovoj-chasti-avto.html</loc>
@@ -515,20 +515,20 @@
                 href="https://ar-autoservice.com.ua/ua/nashi-klienty.html"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/online-video.html</loc>
+    <loc>https://ar-autoservice.com.ua/ua/online-video.html</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-ua"
-                href="https://ar-autoservice.com.ua/ru/online-video.html"/>
+                href="https://ar-autoservice.com.ua/online-video.html"/>
 </url>
 <url>
-    <loc>https://ar-autoservice.com.ua/ru/online-video.html</loc>
+    <loc>https://ar-autoservice.com.ua/online-video.html</loc>
 	<lastmod>2021-06-01</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="uk-ua"
-                href="https://ar-autoservice.com.ua/online-video.html"/>
+                href="https://ar-autoservice.com.ua/ua/online-video.html"/>
 </url>
 <url>
     <loc>https://ar-autoservice.com.ua/ua/predlozhenija-i-akcii-sto.html</loc>
