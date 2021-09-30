@@ -76,8 +76,8 @@
                     </svg>
                 </div>
                 <div class="page-service__content">
-                    <div class="page-service__title">Страница не&nbsp;найдена</div>
-                    <div class="page-service__info">Возможно она была удалена.</div>
+                    <div class="page-service__title">Упс! Такой страницы не&nbsp;существует.</div>
+                    <div class="page-service__info">Перейдите, пожалуйста, на главную страницу, чтобы продолжить использовать сайт.</div>
                     <div class="page-service__button">
                         <a class="button" href="/">Перейти на главную</a>
                     </div>
