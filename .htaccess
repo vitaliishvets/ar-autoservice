@@ -1,12 +1,242 @@
-ErrorDocument 404 https://ar-autoservice.com.ua/404.html
+Options +FollowSymLinks
+RewriteEngine On
+
+# Перенаправление домена с www на без-www
+RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+## Второй вариант написания вышеработающего редиректа
+# RewriteCond %{HTTP_HOST} ^www.mysite\.ru$ [NC]
+# RewriteRule ^(.*)$ http://mysite.ru/$1 [R=301,L]
+
+# Перенаправление с HTTP-версии сайта на HTTPS-версию
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Перенаправление на 404 страницу
+ErrorDocument 404 https://ar-autoservice.com.ua/404.php
+
+# Удаление расширения .php у страницы 404
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^.]+)$ $1 [NC,L]
+# или
+# RewriteRule (.*)\.php$ $1 [R=301,L]
+
+# RewriteRule (.*)\.html$ $1 [R=301,L]
+
+# Перенаправление на новые страницы
+# 301 --- https://ar-autoservice.com.ua/ru/ => https://ar-autoservice.com.ua/
+RewriteRule ^ru/$ /? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/about-us.html => https://ar-autoservice.com.ua/ua/o-nas
+RewriteRule ^about\-us\.html$ /ua/o\-nas? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/about-us.html => https://ar-autoservice.com.ua/o-nas
+RewriteRule ^ru/about\-us\.html$ /o\-nas? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/our-team.html => https://ar-autoservice.com.ua/ua/nasha-komanda
+RewriteRule ^our\-team\.html$ /ua/nasha\-komanda? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/our-team.html => https://ar-autoservice.com.ua/nasha-komanda
+RewriteRule ^ru/our\-team\.html$ /nasha\-komanda? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/certificates.html => https://ar-autoservice.com.ua/ua/sertifikaty
+RewriteRule ^certificates\.html$ /ua/sertifikaty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/certificates.html => https://ar-autoservice.com.ua/sertifikaty
+RewriteRule ^ru/certificates\.html$ /sertifikaty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/vacancy.html => https://ar-autoservice.com.ua/ua/vakansii
+RewriteRule ^vacancy\.html$ /ua/vakansii? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/vacancy.html => https://ar-autoservice.com.ua/vakansii
+RewriteRule ^ru/vacancy\.html$ /vakansii? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services.html => https://ar-autoservice.com.ua/ua/uslugi-sto/
+RewriteRule ^services\.html$ /ua/uslugi\-sto/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services.html => https://ar-autoservice.com.ua/uslugi-sto/
+RewriteRule ^ru/services\.html$ /uslugi\-sto/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/shynomontazh.html => https://ar-autoservice.com.ua/ua/uslugi-sto/shinomontazh-irpen-bucha
+RewriteRule ^services/shynomontazh\.html$ /ua/uslugi\-sto/shinomontazh\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/shynomontazh.html => https://ar-autoservice.com.ua/uslugi-sto/shinomontazh-irpen-bucha
+RewriteRule ^ru/services/shynomontazh\.html$ /uslugi\-sto/shinomontazh\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/perevirka-rozval-sxodzhennya.html => https://ar-autoservice.com.ua/ua/uslugi-sto/proverka-razvala-shozhdenija-irpen-bucha
+RewriteRule ^services/perevirka\-rozval\-sxodzhennya\.html$ /ua/uslugi\-sto/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/perevirka-rozval-sxodzhennya.html => https://ar-autoservice.com.ua/uslugi-sto/proverka-razvala-shozhdenija-irpen-bucha
+RewriteRule ^ru/services/perevirka\-rozval\-sxodzhennya\.html$ /uslugi\-sto/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-osi.html => https://ar-autoservice.com.ua/ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-osi
+RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-osi.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-osi
+RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
+RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
+RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-osi-mikroavtobusy-i-dzhypy.html => https://ar-autoservice.com.ua/ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\-mikroavtobusy\-i\-dzhypy\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-osi-mikroavtobusy-i-dzhypy.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\-mikroavtobusy\-i\-dzhypy\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi-mikroavtobusy-i-dzhypy.html => https://ar-autoservice.com.ua/ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\-mikroavtobusy\-i\-dzhypy\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi-mikroavtobusy-i-dzhypy.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\-mikroavtobusy\-i\-dzhypy\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/kompyuterna-diahnostyka-avtomobilya.html => https://ar-autoservice.com.ua/ua/uslugi-sto/kompjuternaja-diagnostika-avto-irpen-bucha
+RewriteRule ^services/kompyuterna\-diahnostyka\-avtomobilya\.html$ /ua/uslugi\-sto/kompjuternaja\-diagnostika\-avto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/kompyuterna-diahnostyka-avtomobilya.html => https://ar-autoservice.com.ua/uslugi-sto/kompjuternaja-diagnostika-avto-irpen-bucha
+RewriteRule ^ru/services/kompyuterna\-diahnostyka\-avtomobilya\.html$ /uslugi\-sto/kompjuternaja\-diagnostika\-avto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/zamina-remenia-hrm.html => https://ar-autoservice.com.ua/ua/uslugi-sto/zamena-remnja-grm-irpen-bucha
+RewriteRule ^services/zamina\-remenia\-hrm\.html$ /ua/uslugi\-sto/zamena\-remnja\-grm\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/zamina-remenia-hrm.html => https://ar-autoservice.com.ua/uslugi-sto/zamena-remnja-grm-irpen-bucha
+RewriteRule ^ru/services/zamina\-remenia\-hrm\.html$ /uslugi\-sto/zamena\-remnja\-grm\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/vstanovlennya-zahystu-dvyhuna.html => https://ar-autoservice.com.ua/ua/uslugi-sto/ustanovka-zashhity-dvigatelja-irpen-bucha
+RewriteRule ^services/vstanovlennya\-zahystu\-dvyhuna\.html$ /ua/uslugi\-sto/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/vstanovlennya-zahystu-dvyhuna.html => https://ar-autoservice.com.ua/uslugi-sto/ustanovka-zashhity-dvigatelja-irpen-bucha
+RewriteRule ^ru/services/vstanovlennya\-zahystu\-dvyhuna\.html$ /uslugi\-sto/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/zapravka-avtokondytsionera-freonom.html => https://ar-autoservice.com.ua/ua/uslugi-sto/zapravka-avtokondicionera-freonom-irpen-bucha
+RewriteRule ^services/zapravka\-avtokondytsionera\-freonom\.html$ /ua/uslugi\-sto/zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/zapravka-avtokondytsionera-freonom.html => https://ar-autoservice.com.ua/uslugi-sto/zapravka-avtokondicionera-freonom-irpen-bucha
+RewriteRule ^ru/services/zapravka\-avtokondytsionera\-freonom\.html$ /uslugi\-sto/zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/remont-avtokondytsionera.html => https://ar-autoservice.com.ua/ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^services/remont\-avtokondytsionera\.html$ /ua/uslugi\-sto/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/remont-avtokondytsionera.html => https://ar-autoservice.com.ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^ru/services/remont\-avtokondytsionera\.html$ /uslugi\-sto/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/diahnostyka-avtokondytsionera.html => https://ar-autoservice.com.ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha
+RewriteRule ^ru/services/diahnostyka\-avtokondytsionera\.html$ /uslugi\-sto/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/diahnostyka-avtokondytsionera.html => https://ar-autoservice.com.ua/ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha
+RewriteRule ^services/diahnostyka\-avtokondytsionera\.html$ /ua/uslugi\-sto/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/zamina-hlushnyka.html => https://ar-autoservice.com.ua/ua/uslugi-sto/zamena-glushitelja-irpen-bucha
+RewriteRule ^services/zamina\-hlushnyka\.html$ /ua/uslugi\-sto/zamena\-glushitelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/zamina-hlushnyka.html => https://ar-autoservice.com.ua/uslugi-sto/zamena-glushitelja-irpen-bucha
+RewriteRule ^ru/services/zamina\-hlushnyka\.html$ /uslugi\-sto/zamena\-glushitelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/diahnostyka-hodovoyi.html => https://ar-autoservice.com.ua/ua/uslugi-sto/diagnostika-hodovoj-irpen-bucha
+RewriteRule ^services/diahnostyka\-hodovoyi\.html$ /ua/uslugi\-sto/diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/services/diahnostyka-hodovoyi.html => https://ar-autoservice.com.ua/uslugi-sto/diagnostika-hodovoj-irpen-bucha
+RewriteRule ^ru/services/diahnostyka\-hodovoyi\.html$ /uslugi\-sto/diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/price.html => https://ar-autoservice.com.ua/ua/sto-ceny-irpen-bucha
+RewriteRule ^price\.html$ /ua/sto\-ceny\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/price.html => https://ar-autoservice.com.ua/sto-ceny-irpen-bucha
+RewriteRule ^ru/price\.html$ /sto\-ceny\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/blog.html => https://ar-autoservice.com.ua/ua/blog/
+RewriteRule ^blog\.html$ /ua/blog/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/blog.html => https://ar-autoservice.com.ua/blog/
+RewriteRule ^ru/blog\.html$ /blog/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/blog/rehuliuvannia-svitla-far-chy-potribno-robyty.html => https://ar-autoservice.com.ua/ua/blog/regulirovka-sveta-far-nuzhno-li-delat
+RewriteRule ^blog/rehuliuvannia\-svitla\-far\-chy\-potribno\-robyty\.html$ /ua/blog/regulirovka\-sveta\-far\-nuzhno\-li\-delat? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/blog/rehuliuvannia-svitla-far-chy-potribno-robyty.html => https://ar-autoservice.com.ua/blog/regulirovka-sveta-far-nuzhno-li-delat
+RewriteRule ^ru/blog/rehuliuvannia\-svitla\-far\-chy\-potribno\-robyty\.html$ /blog/regulirovka\-sveta\-far\-nuzhno\-li\-delat? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/blog/avtomobilni-freony-r12-r134a-r744-ta-r1234yf.html => https://ar-autoservice.com.ua/ua/blog/avtomobilnye-freony-r12-r134a-r744-i-r1234yf
+RewriteRule ^blog/avtomobilni\-freony\-r12\-r134a\-r744\-ta\-r1234yf\.html$ /ua/blog/avtomobilnye\-freony\-r12\-r134a\-r744\-i\-r1234yf? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/blog/avtomobilni-freony-r12-r134a-r744-ta-r1234yf.html => https://ar-autoservice.com.ua/blog/avtomobilnye-freony-r12-r134a-r744-i-r1234yf
+RewriteRule ^ru/blog/avtomobilni\-freony\-r12\-r134a\-r744\-ta\-r1234yf\.html$ /blog/avtomobilnye\-freony\-r12\-r134a\-r744\-i\-r1234yf? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/blog/zapravka-avtokondycionera-yake-obladnannya-my-vykorystovuyemo.html => https://ar-autoservice.com.ua/ua/blog/zapravka-avtokondicionera-kakoe-oborudovanie-my-ispolzuem
+RewriteRule ^blog/zapravka\-avtokondycionera\-yake\-obladnannya\-my\-vykorystovuyemo\.html$ /ua/blog/zapravka\-avtokondicionera\-kakoe\-oborudovanie\-my\-ispolzuem? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/blog/zapravka-avtokondycionera-yake-obladnannya-my-vykorystovuyemo.html => https://ar-autoservice.com.ua/blog/zapravka-avtokondicionera-kakoe-oborudovanie-my-ispolzuem
+RewriteRule ^ru/blog/zapravka\-avtokondycionera\-yake\-obladnannya\-my\-vykorystovuyemo\.html$ /blog/zapravka\-avtokondicionera\-kakoe\-oborudovanie\-my\-ispolzuem? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/news.html => https://ar-autoservice.com.ua/ua/novosti/
+RewriteRule ^news\.html$ /ua/novosti/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/news.html => https://ar-autoservice.com.ua/novosti/
+RewriteRule ^ru/news\.html$ /novosti/? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/news/aktsiia-diahnostyka-khodovoi-chastyny-avtomobilia.html => https://ar-autoservice.com.ua/ua/novosti/akcija-diagnostika-hodovoj-chasti-avto
+RewriteRule ^news/aktsiia\-diahnostyka\-khodovoi\-chastyny\-avtomobilia\.html$ /ua/novosti/akcija\-diagnostika\-hodovoj\-chasti\-avto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/news/aktsiia-diahnostyka-khodovoi-chastyny-avtomobilia.html => https://ar-autoservice.com.ua/novosti/akcija-diagnostika-hodovoj-chasti-avto
+RewriteRule ^ru/news/aktsiia\-diahnostyka\-khodovoi\-chastyny\-avtomobilia\.html$ /novosti/akcija\-diagnostika\-hodovoj\-chasti\-avto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/news/znajdit-nas-na-sajti-motul.html => https://ar-autoservice.com.ua/ua/novosti/najdite-nas-na-sajte-motul
+RewriteRule ^news/znajdit\-nas\-na\-sajti\-motul\.html$ /ua/novosti/najdite\-nas\-na\-sajte\-motul? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/news/znajdit-nas-na-sajti-motul.html => https://ar-autoservice.com.ua/novosti/najdite-nas-na-sajte-motul
+RewriteRule ^ru/news/znajdit\-nas\-na\-sajti\-motul\.html$ /novosti/najdite\-nas\-na\-sajte\-motul? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/news/my-rozshyryly-posluhy-dlya-vas.html => https://ar-autoservice.com.ua/ua/novosti/my-rasshirili-uslugi-sto
+RewriteRule ^news/my\-rozshyryly\-posluhy\-dlya\-vas\.html$ /ua/novosti/my\-rasshirili\-uslugi\-sto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/news/my-rozshyryly-posluhy-dlya-vas.html => https://ar-autoservice.com.ua/novosti/my-rasshirili-uslugi-sto
+RewriteRule ^ru/news/my\-rozshyryly\-posluhy\-dlya\-vas\.html$ /novosti/my\-rasshirili\-uslugi\-sto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/contacts.html => https://ar-autoservice.com.ua/ua/kontakty
+RewriteRule ^contacts\.html$ /ua/kontakty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/contacts.html => https://ar-autoservice.com.ua/kontakty
+RewriteRule ^ru/contacts\.html$ /kontakty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/advantages.html => https://ar-autoservice.com.ua/ua/preimushhestva-sto
+RewriteRule ^advantages\.html$ /ua/preimushhestva\-sto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/advantages.html => https://ar-autoservice.com.ua/preimushhestva-sto
+RewriteRule ^ru/advantages\.html$ /preimushhestva\-sto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/customers.html => https://ar-autoservice.com.ua/ua/nashi-klienty
+RewriteRule ^customers\.html$ /ua/nashi\-klienty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/customers.html => https://ar-autoservice.com.ua/nashi-klienty
+RewriteRule ^ru/customers\.html$ /nashi\-klienty? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/online-video.html => https://ar-autoservice.com.ua/ua/online-video
+RewriteRule ^online\-video\.html$ /ua/online\-video? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/online-video.html => https://ar-autoservice.com.ua/online-video
+RewriteRule ^ru/online\-video\.html$ /online\-video? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/offers.html => https://ar-autoservice.com.ua/ua/predlozhenija-i-akcii-sto
+RewriteRule ^offers\.html$ /ua/predlozhenija\-i\-akcii\-sto? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ru/offers.html => https://ar-autoservice.com.ua/predlozhenija-i-akcii-sto
+RewriteRule ^ru/offers\.html$ /predlozhenija\-i\-akcii\-sto? [L,R=301]
+
+
+# Кэширование файлов с расширениями
 <filesMatch ".(jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
-#RewriteEngine on
-#RewriteBase /
-#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-#RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
-#RewriteCond %{REQUEST_URI} !(\.[^./]+)$
-#RewriteCond %{REQUEST_fileNAME} !-d
-#RewriteCond %{REQUEST_fileNAME} !-f
-#RewriteRule (.*) /$1.html
+
+# Удаление расширения файлов в адресной строке
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html
