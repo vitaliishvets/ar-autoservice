@@ -215,7 +215,7 @@ RewriteRule ^customers\.html$ /ua/nashi\-klienty? [L,R=301]
 RewriteRule ^ru/customers\.html$ /nashi\-klienty? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/online-video.html => https://ar-autoservice.com.ua/ua/online-video
-RewriteRule ^online\-video\.html$ /ua/online\-video? [L,R=301]
+# RewriteRule ^online\-video\.html$ /ua/online\-video? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ru/online-video.html => https://ar-autoservice.com.ua/online-video
 RewriteRule ^ru/online\-video\.html$ /online\-video? [L,R=301]
@@ -232,7 +232,7 @@ RewriteRule ^ru/offers\.html$ /predlozhenija\-i\-akcii\-sto? [L,R=301]
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
 
-# Удаление расширения файлов в адресной строке
+# Удаление расширения файлов .html из адресной строке
 RewriteBase /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
