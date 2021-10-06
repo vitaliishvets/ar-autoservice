@@ -15,11 +15,11 @@
 //   border-color: #d5d6d6;
 // }
 
-picture {
-    display: inline-block;
-    box-sizing: border-box;
-    max-width: 100%;
-}
+// picture {
+//     display: inline-block;
+//     box-sizing: border-box;
+//     max-width: 100%;
+// }
 
 .doubleArrows:after,
 .moreLink:after {
@@ -300,11 +300,15 @@ a:not(.button):hover:before {
 
 @media only screen and (max-width: 63.9375em) {
 
-    .boxInfo,
-    a.linkFullSize {
+    // .boxInfo,
+    // a.linkFullSize {
+    //     padding: .9375rem;
+    // }
+    
+    .boxInfo.boxBig {
         padding: .9375rem;
     }
-
+    
     a.linkFullSize {
         margin: -.9375rem;
         top: .9375rem;

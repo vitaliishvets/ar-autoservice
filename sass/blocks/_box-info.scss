@@ -7,13 +7,32 @@
     position: relative;
     height: 19.5625rem;
     margin-top: 1.25rem;
-    padding: 1.25rem;
+    // padding: 1.25rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f0f0f0;
     background-image: linear-gradient(#f0f0f0, #d2d2d3);
     background-position: top;
     border-top: .125rem solid #e51313;
+    overflow: hidden;
+}
+
+// .boxInfo img {
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center bottom;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-position: center top;
+// }
+
+.boxInfo__news {
+    padding: 1.25rem;
 }
 
 .boxInfo .headline {
@@ -238,6 +257,9 @@
 
     .boxInfo {
         height: 17.6875rem;
+    }
+    
+    .boxInfo__news {
         padding: .9375rem;
     }
     
