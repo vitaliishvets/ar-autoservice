@@ -316,6 +316,97 @@ RewriteRule ^ua/uslugi\-sto/diagnostika\-hodovoj\-irpen\-bucha$ /ua/sto\-irpen\-
 # 301 --- https://ar-autoservice.com.ua/uslugi-sto/diagnostika-hodovoj-irpen-bucha => https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-hodovoj-irpen-bucha
 RewriteRule ^uslugi\-sto/diagnostika\-hodovoj\-irpen\-bucha$ /sto\-irpen\-bucha/diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
 
+# 301 редирект после смены расположения файлов из папки в корень сайта
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/ => https://ar-autoservice.com.ua/ua/sto-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/$ /ua/sto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/ => https://ar-autoservice.com.ua/sto-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/$ /sto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/shinomontazh-irpen-bucha => https://ar-autoservice.com.ua/ua/shinomontazh-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/shinomontazh\-irpen\-bucha$ /ua/shinomontazh\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/shinomontazh-irpen-bucha => https://ar-autoservice.com.ua/shinomontazh-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/shinomontazh\-irpen\-bucha$ /shinomontazh\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/proverka-razvala-shozhdenija-irpen-bucha => https://ar-autoservice.com.ua/ua/proverka-razvala-shozhdenija-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/proverka\-razvala\-shozhdenija\-irpen\-bucha$ /ua/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/proverka-razvala-shozhdenija-irpen-bucha => https://ar-autoservice.com.ua/proverka-razvala-shozhdenija-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/proverka\-razvala\-shozhdenija\-irpen\-bucha$ /proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi => https://ar-autoservice.com.ua/ua/regulirovka-razvala-shozhdenija-perednej-osi
+RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-osi
+RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
+RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
+RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy => https://ar-autoservice.com.ua/ua/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy$ /regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy => https://ar-autoservice.com.ua/ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi-mikroavtobusy-i-dzhipy
+RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy$ /regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/kompjuternaja-diagnostika-avto-irpen-bucha => https://ar-autoservice.com.ua/ua/kompjuternaja-diagnostika-avto-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/kompjuternaja\-diagnostika\-avto\-irpen\-bucha$ /ua/kompjuternaja\-diagnostika\-avto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/kompjuternaja-diagnostika-avto-irpen-bucha => https://ar-autoservice.com.ua/kompjuternaja-diagnostika-avto-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/kompjuternaja\-diagnostika\-avto\-irpen\-bucha$ /kompjuternaja\-diagnostika\-avto\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/zamena-remnja-grm-irpen-bucha => https://ar-autoservice.com.ua/ua/zamena-remnja-grm-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/zamena\-remnja\-grm\-irpen\-bucha$ /ua/zamena\-remnja\-grm\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/zamena-remnja-grm-irpen-bucha => https://ar-autoservice.com.ua/zamena-remnja-grm-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/zamena\-remnja\-grm\-irpen\-bucha$ /zamena\-remnja\-grm\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/ustanovka-zashhity-dvigatelja-irpen-bucha => https://ar-autoservice.com.ua/ua/ustanovka-zashhity-dvigatelja-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha$ /ua/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/ustanovka-zashhity-dvigatelja-irpen-bucha => https://ar-autoservice.com.ua/ustanovka-zashhity-dvigatelja-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha$ /ustanovka\-zashhity\-dvigatelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/zapravka-avtokondicionera-freonom-irpen-bucha => https://ar-autoservice.com.ua/ua/zapravka-avtokondicionera-freonom-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/zapravka\-avtokondicionera\-freonom\-irpen\-bucha$ /ua/zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/zapravka-avtokondicionera-freonom-irpen-bucha => https://ar-autoservice.com.ua/zapravka-avtokondicionera-freonom-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/zapravka\-avtokondicionera\-freonom\-irpen\-bucha$ /zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/remont-avtokondicionerov-irpen-bucha => https://ar-autoservice.com.ua/ua/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/remont\-avtokondicionerov\-irpen\-bucha$ /ua/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/remont-avtokondicionerov-irpen-bucha => https://ar-autoservice.com.ua/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/remont\-avtokondicionerov\-irpen\-bucha$ /remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/diagnostika-avtokondicionera-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha$ /diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/ua/diagnostika-avtokondicionera-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha$ /ua/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/zamena-glushitelja-irpen-bucha => https://ar-autoservice.com.ua/ua/zamena-glushitelja-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/zamena\-glushitelja\-irpen\-bucha$ /ua/zamena\-glushitelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/zamena-glushitelja-irpen-bucha => https://ar-autoservice.com.ua/zamena-glushitelja-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/zamena\-glushitelja\-irpen\-bucha$ /zamena\-glushitelja\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/diagnostika-hodovoj-irpen-bucha => https://ar-autoservice.com.ua/ua/diagnostika-hodovoj-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/diagnostika\-hodovoj\-irpen\-bucha$ /ua/diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-hodovoj-irpen-bucha => https://ar-autoservice.com.ua/diagnostika-hodovoj-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/diagnostika\-hodovoj\-irpen\-bucha$ /diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
+
 
 # Кэширование файлов с расширениями
 <filesMatch ".(jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
