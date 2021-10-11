@@ -104,33 +104,33 @@
     },
 
     _initNavigation: function () {
-        // var $mobileNavigation = $('.navigation-mobile');
+        var $mobileNavigation = $('.navigation-mobile');
 
-        // // Navigation mobile basic functions
-        // $mobileNavigation.on('click', '.has-dropdown > a', function (event) {
-        //     var $link = $(this),
-        //         $listElement = $link.parent(),
-        //         subMenuOffset, windowScrollTop;
+        // Navigation mobile basic functions
+        $mobileNavigation.on('click', '.has-dropdown > a', function (event) {
+            var $link = $(this),
+                $listElement = $link.parent(),
+                subMenuOffset, windowScrollTop;
 
-        //     if ($listElement.hasClass('active')) {
-        //         $listElement.removeClass('active');
-        //     } else {
-        //         $link.parent().parent().find('.active').removeClass('active');
-        //         $link.parent().addClass('active');
+            if ($listElement.hasClass('active')) {
+                $listElement.removeClass('active');
+            } else {
+                $link.parent().parent().find('.active').removeClass('active');
+                $link.parent().addClass('active');
 
-        //         subMenuOffset = $link.next().offset().top;
-        //         windowScrollTop = $(window).scrollTop();
+                subMenuOffset = $link.next().offset().top;
+                windowScrollTop = $(window).scrollTop();
 
-        //         // Make sure the opened dropdown is visible and not beyond the fold
-        //         if (subMenuOffset > (windowScrollTop + $(window).height()) * 0.9) {
-        //             utilities.smoothScroll(windowScrollTop + 100);
-        //         } else if (subMenuOffset < windowScrollTop) {
-        //             utilities.smoothScroll(subMenuOffset - 50);
-        //         }
-        //     }
+                // Make sure the opened dropdown is visible and not beyond the fold
+                if (subMenuOffset > (windowScrollTop + $(window).height()) * 0.9) {
+                    utilities.smoothScroll(windowScrollTop + 100);
+                } else if (subMenuOffset < windowScrollTop) {
+                    utilities.smoothScroll(subMenuOffset - 50);
+                }
+            }
 
-        //     event.preventDefault();
-        // });
+            event.preventDefault();
+        });
 
         $('.hamburger').click(function (event) {
             var $icon = $(this),

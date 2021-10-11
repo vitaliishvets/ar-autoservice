@@ -309,7 +309,15 @@ ol li:not(:last-child) {
     margin-bottom: 1.5625rem;
 }
 
-ul[class^=navigation-] a,
+// ul[class^=navigation-],
+// .pagination .active,
+// .headline {
+//     font-family: 'MetaProCondBook', sans-serif;
+// }
+.navigation-mobile,
+.navigation-sup,
+.navigation-sub,
+.navigation-sub__list,
 .pagination .active,
 .headline {
     font-family: 'MetaProCondBook', sans-serif;
