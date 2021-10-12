@@ -175,6 +175,7 @@
 
 #navArea .meta-navigation,
 #navArea .navigation-mobile {
+    margin-bottom: 0;
     opacity: 0;
     transform: scale(.8);
     transform-style: preserve-3d;
@@ -212,6 +213,7 @@
 }
 
 .navigation-mobile li.has-dropdown.active > a:after {
+    right: 1.75rem;
     transform: rotate(-90deg);
 }
 
