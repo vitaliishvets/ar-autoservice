@@ -270,10 +270,13 @@ a:not(.button):hover:before {
     padding: 1.25rem;
 }
 
-/* Устанавливает цвет ссылок на страницах статей в блоге, страниц с новостью и страниц с услугами сто */
+/* Устанавливает цвет ссылок на страницах статей в блоге,
+   страниц с новостью и страниц с услугами сто,
+   а также в тексте на главной */
 .news-article-section a,
 .services-article-section a,
-.blog-article-section a {
+.blog-article-section a,
+.boxInfo__seo-text a {
     color: #0060a0;
     border-color: rgba(0,96,160,0.15);
     transition-property: border-bottom,border-color,background,color,fill;
