@@ -407,6 +407,16 @@ RewriteRule ^ua/sto\-irpen\-bucha/diagnostika\-hodovoj\-irpen\-bucha$ /ua/diagno
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-hodovoj-irpen-bucha => https://ar-autoservice.com.ua/diagnostika-hodovoj-irpen-bucha
 RewriteRule ^sto\-irpen\-bucha/diagnostika\-hodovoj\-irpen\-bucha$ /diagnostika\-hodovoj\-irpen\-bucha? [L,R=301]
 
+# 301 редирект после создания одной страницы Развал схождение вместо нескольких других
+# 301 --- https://ar-autoservice.com.ua/services/perevirka-rozval-sxodzhennya.html => https://ar-autoservice.com.ua/ua/razval-shozhdenie-irpen-bucha
+RewriteRule ^services/perevirka\-rozval\-sxodzhennya\.html$ /ua/razval\-shozhdenie\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/ua/razval-shozhdenie-irpen-bucha
+RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /ua/razval\-shozhdenie\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/razval-shozhdenie-irpen-bucha
+RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /razval\-shozhdenie\-irpen\-bucha? [L,R=301]
+
 
 # Кэширование файлов с расширениями
 <filesMatch ".(jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
