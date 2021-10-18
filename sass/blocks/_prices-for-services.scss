@@ -1,0 +1,64 @@
+
+/*--------------------------------------------------------------
+ * # Prices for Services
+ * ------------------------------------------------------------*/
+
+.price-table__wrapper {
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 1.75rem;
+}
+
+.price-table {
+    width: 100%;
+}
+
+.price-table__title {
+    background: #e8e8e8;
+    text-align: left;
+}
+
+.price-table__title-cell {
+    padding: .3125rem  1.25rem;
+}
+
+.price-table__title-cell--left {
+    border-top-left-radius: .3125rem;
+}
+
+.price-table__title-cell--right {
+    border-top-right-radius: .3125rem;
+}
+
+.price-table__descr {
+    font: 1.125rem/1 'MetaProCondBook', sans-serif;
+    text-align: left;
+}
+
+.price-table__descr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+.price-table__descr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.price-table__descr-cell {
+    padding: .625rem 1.25rem;
+}
+
+.price-table__descr-cell:first-child {
+    width: 70%;
+}
+
+.price-table__descr-cell:last-child {
+    width: 30%;
+}
+
+.price-table__descr-cell--left {
+    border-bottom-left-radius: .3125rem;
+}
+
+.price-table__descr-cell--right {
+    border-bottom-right-radius: .3125rem;
+}
