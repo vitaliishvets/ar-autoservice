@@ -65,7 +65,7 @@ RewriteRule ^services/shynomontazh\.html$ /ua/uslugi\-sto/shinomontazh\-irpen\-b
 RewriteRule ^ru/services/shynomontazh\.html$ /uslugi\-sto/shinomontazh\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/services/perevirka-rozval-sxodzhennya.html => https://ar-autoservice.com.ua/ua/uslugi-sto/proverka-razvala-shozhdenija-irpen-bucha
-RewriteRule ^services/perevirka\-rozval\-sxodzhennya\.html$ /ua/uslugi\-sto/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
+# RewriteRule ^services/perevirka\-rozval\-sxodzhennya\.html$ /ua/uslugi\-sto/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ru/services/perevirka-rozval-sxodzhennya.html => https://ar-autoservice.com.ua/uslugi-sto/proverka-razvala-shozhdenija-irpen-bucha
 RewriteRule ^ru/services/perevirka\-rozval\-sxodzhennya\.html$ /uslugi\-sto/proverka\-razvala\-shozhdenija\-irpen\-bucha? [L,R=301]
@@ -77,7 +77,7 @@ RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi
 RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
-RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+# RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /ua/uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
 RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
@@ -345,7 +345,7 @@ RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi$
 RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
-RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
+# RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy => https://ar-autoservice.com.ua/ua/regulirovka-razvala-shozhdenija-perednej-osi-mikroavtobusy-i-dzhipy
 RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy$ /ua/regulirovka\-razvala\-shozhdenija\-perednej\-osi\-mikroavtobusy\-i\-dzhipy? [L,R=301]
