@@ -1,12 +1,13 @@
 Options +FollowSymLinks
 RewriteEngine On
-
 # Перенаправление домена с www на без-www
 RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-## Второй вариант написания вышеработающего редиректа
-# RewriteCond %{HTTP_HOST} ^www.mysite\.ru$ [NC]
-# RewriteRule ^(.*)$ http://mysite.ru/$1 [R=301,L]
+# Редирект с индексной страницы на саму папку (корень)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
+RewriteRule ^index$ http://ar-autoservice.com.ua/ [R=301,L]
+# Редирект для всех индексных страниц на сайте
+RewriteRule ^(.*)index$ http://ar-autoservice.com.ua/$1 [R=301,L]
 
 # Перенаправление с HTTP-версии сайта на HTTPS-версию
 RewriteCond %{HTTPS} off
@@ -14,7 +15,7 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Перенаправление на 404 страницу
-ErrorDocument 404 https://ar-autoservice.com.ua/404.php
+ErrorDocument 404 /404.php
 
 # Удаление расширения .php у страницы 404
 # RewriteCond %{REQUEST_FILENAME} !-f
@@ -23,6 +24,8 @@ ErrorDocument 404 https://ar-autoservice.com.ua/404.php
 # RewriteRule (.*)\.php$ $1 [R=301,L]
 
 # RewriteRule (.*)\.html$ $1 [R=301,L]
+
+AddCharset UTF-8 .html
 
 # Перенаправление на новые страницы
 # 301 --- https://ar-autoservice.com.ua/ru/ => https://ar-autoservice.com.ua/
