@@ -1,3 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /404.php
+
 User-agent: Googlebot
 Allow: /
 Disallow: /404.php
@@ -6,8 +10,8 @@ User-agent: Yandex
 Allow: /
 Disallow: /404.php
 
-User-agent: *
-Allow: /
-Disallow: /404.php
+Host: ar-autoservice.com.ua
 
-Sitemap: https://ar-autoservice.com.ua/sitemap.xml
+Sitemap: http://ar-autoservice.com.ua/sitemap.xml
+Sitemap: http://ar-autoservice.com.ua/sitemap_ru.xml
+Sitemap: http://ar-autoservice.com.ua/sitemap_ua.xml
