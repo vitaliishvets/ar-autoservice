@@ -53,6 +53,7 @@
     margin-bottom: 1.5625rem;
     font-size: 1.125rem;
     font-weight: bold;
+    color: #545454;
 }
 
 .footer address {
@@ -67,6 +68,7 @@
 
 .footer [class^="organization"] {
     display: block;
+    line-height: 1.875rem;
 }
 
 .footer .organization-address::before {
@@ -91,7 +93,6 @@
 
 .footer .organization-tel a {
     font-size: 18px;
-    line-height: 24px;
 }
 
 .footer p:not(.headline) {
@@ -311,6 +312,10 @@
 
     .footer address:nth-child(2) {
         margin-bottom: 1.25rem;
+    }
+
+    .footer [class^="organization"] {
+        line-height: 1.5rem;
     }
 
     // .footer .accordion .accordion-navigation .content {
