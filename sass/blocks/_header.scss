@@ -684,6 +684,10 @@
     color: #464646;
 }
 
+.navigation-sub-lvl1__item .navigation-sub-lvl1__link--active {
+    color: #e51313;
+}
+
 .navigation-sub-lvl1__link--arrow:after {
     position: absolute;
     bottom: 6px;
