@@ -107,7 +107,7 @@
         var $mobileNavigation = $('.navigation-mobile');
 
         // Navigation mobile basic functions
-        $mobileNavigation.on('click', '.has-dropdown > a', function (event) {
+        $mobileNavigation.on('click', '.navigation-mobile-lvl2 > .navigation-mobile__link--list', function (event) {
             var $link = $(this),
                 $listElement = $link.parent(),
                 subMenuOffset, windowScrollTop;
@@ -153,7 +153,7 @@
         });
         
         return this;
-        },
+    },
 
     /*_initSearch: function() {
       $('.meta-navigation').each(function() {

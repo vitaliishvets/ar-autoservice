@@ -29,16 +29,16 @@
     font-size: 1.3;
 }
 
-a:not(.button) {
-    text-decoration: none;
-}
+// a:not(.button) {
+//     text-decoration: none;
+// }
 
-a:not(.button):hover,
-a:not(.button):hover span,
-a:not(.button):hover:after,
-a:not(.button):hover:before {
-    color: #454545;
-}
+// a:not(.button):hover,
+// a:not(.button):hover span,
+// a:not(.button):hover:after,
+// a:not(.button):hover:before {
+//     color: #454545;
+// }
 
 .moreLink {
     right: 1.25rem;
