@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+ * # Work Schedule and part interaction
+ * ------------------------------------------------------------*/
+
+.work-schedule,
+.interaction {
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: .875rem;
+    box-shadow: 0 0 .625rem 0 rgba(0, 0, 0, .25);
+}
+
+.work-schedule {
+    background-color: #f9f9f9;
+    background-image: linear-gradient(-40deg, #f9f9f9 0%, #eeeeee 75%, #efefef 90%);
+}
+
+p.work-schedule__title,
+p.interaction__title {
+    font: 1.75rem/1.2 'MetaProCondBold', sans-serif;
+    text-transform: uppercase;
+}
+
+p.work-schedule__title {
+    color: #505050;
+}
+
+p.work-schedule__text {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+}
+
+.work-schedule__text::before,
+.interaction__text::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3125rem;
+    background-image: url(/img/icons/map-marker-alt.svg);
+    background-repeat: no-repeat;
+}
+
+p.work-schedule__time {
+    font-size: 1.25rem;
+}
+
+.work-schedule__time span,
+.work-schedule__sub-text span {
+    color: #e51717;
+}
+
+p.work-schedule__sub-text {
+    margin-bottom: 0;
+    font-size: .75rem;
+    text-align: left;
+}
+
+@media only screen and (min-width: 48em) {
+
+    .content-wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    p.work-schedule__text {
+        font-size: 1.375rem;
+    }
+
+    .work-schedule__text::before {
+        
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    p.work-schedule__time {
+        font-size: 1.375rem;
+    }
+
+}
+
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+
+    .content-wrap {
+        justify-content: space-between;
+    }
+
+}
+
+@media only screen and (min-width: 85.375em) {
+    
+    .work-schedule__content,
+    .interaction__content {
+        width: 50%;
+    }
+
+}
