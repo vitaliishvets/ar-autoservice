@@ -278,6 +278,12 @@ RewriteRule ^ua/uslugi\-sto/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha$ /ua/s
 # 301 --- https://ar-autoservice.com.ua/uslugi-sto/zapravka-avtokondicionera-freonom-irpen-bucha => https://ar-autoservice.com.ua/sto-irpen-bucha/zapravka-avtokondicionera-freonom-irpen-bucha
 RewriteRule ^uslugi\-sto/zapravka\-avtokondicionera\-freonom\-irpen\-bucha$ /sto\-irpen\-bucha/zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
 
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/zapravka-avtokondicionera-freonom-irpen-bucha => https://ar-autoservice.com.ua/ua/zapravka-avtokondicionera-freonom-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/zapravka\-avtokondicionera\-freonom\-irpen\-bucha$ /ua/zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/remont-avtokondicionerov-irpen-bucha => https://ar-autoservice.com.ua/ua/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^ua/sto\-irpen\-bucha/remont\-avtokondicionerov\-irpen\-bucha$ /ua/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
 # 301 --- https://ar-autoservice.com.ua/ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha.html => https://ar-autoservice.com.ua/ua/remont-avtokondicionerov-irpen-bucha
 RewriteRule ^ua/uslugi\-sto/remont\-avtokondicionerov\-irpen\-bucha\.html$ /ua/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
 
