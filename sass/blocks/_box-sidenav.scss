@@ -13,7 +13,8 @@
 .boxSidenav .moreLink,
 .boxSidenav a,
 .boxSidenav a h2 {
-    color: #fff;
+    color: #ffffff;
+    transition: all .15s;
 }
 
 .boxSidenav p:not(.headline) {
@@ -21,41 +22,28 @@
 }
 
 .boxSidenav .headline {
+    margin-top: -.3125rem;
     margin-bottom: .3125rem;
+    width: 100%;
+    display: inline-block;
 }
 
-.boxSidenav.bgGrey,
+.boxSidenav.bgGrey {
+    background-color: #bababa;
+    background-image: linear-gradient(#bababa, #8d8d8d);
+}
+
 .boxSidenav.bgOrange {
-    background-color: #898989;
-    background-image: linear-gradient(#898989, #626161);
+    background-color: #f42525;
+    background-image: linear-gradient(#f42525, #e51313);
 }
 
-.boxSidenav.bgGrey a .overlayHover,
-.boxSidenav.bgOrange a .overlayHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #bfbfbf;
-    opacity: 0;
-    transition: opacity .35s;
-}
-
-.boxSidenav.bgGrey a:hover .moreLink,
-.boxSidenav.bgGrey a:hover p,
-.boxSidenav.bgGrey a:hover p span,
-.boxSidenav.bgGrey a:hover h2,
-.boxSidenav.bgOrange a:hover .moreLink,
-.boxSidenav.bgOrange a:hover p,
-.boxSidenav.bgOrange a:hover h2,
-.boxSidenav.bgOrange a:hover p span {
-    color: #323232;
-}
-
-.boxSidenav.bgGrey a:hover .overlayHover,
-.boxSidenav.bgOrange a:hover .overlayHover {
-    opacity: 1;
+.boxSidenav.bgGrey a:hover,
+.boxSidenav.bgGrey a:active,
+.boxSidenav.bgGrey .moreLink:hover,
+.boxSidenav.bgGrey .moreLink:active {
+    color: #e51313;
+    transition: all .15s;
 }
 
 .boxSidenav.bgGrey a .content,
@@ -64,21 +52,12 @@
     margin-bottom: 1.25rem;
 }
 
-.boxSidenav.bgOrange {
-    background-color: #f42525;
-    background-image: linear-gradient(#f42525, #e51313);
-}
-
-.boxSidenav.bgOrange a .overlayHover {
-    background: #f4a2a2;
-}
-
-.boxSidenav.bgOrange a:hover .moreLink,
-.boxSidenav.bgOrange a:hover .moreLinkText,
-.boxSidenav.bgOrange a:hover p,
-.boxSidenav.bgOrange a:hover h2,
-.boxSidenav.bgOrange a:hover p span {
-    color: #e51313;
+.boxSidenav.bgOrange a:hover,
+.boxSidenav.bgOrange a:active,
+.boxSidenav.bgOrange .moreLink:hover,
+.boxSidenav.bgOrange .moreLink:active {
+    color: #323232;
+    transition: all .15s;
 }
 
 .boxSidenav .linkFullSize {
