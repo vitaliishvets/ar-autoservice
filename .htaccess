@@ -1,18 +1,27 @@
 Options +FollowSymLinks
 RewriteEngine On
-# Перенаправление домена с www на без-www
-RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-# Редирект с индексной страницы на саму папку (корень)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
-RewriteRule ^index$ http://ar-autoservice.com.ua/ [R=301,L]
-# Редирект для всех индексных страниц на сайте
-RewriteRule ^(.*)index$ http://ar-autoservice.com.ua/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+# 301 --- http://www.ar-autoservice.com.ua => https://ar-autoservice.com.ua
+RewriteCond %{HTTP_HOST} ^www\.ar\-autoservice\.com\.ua$
+RewriteRule ^$ https://ar\-autoservice.com.ua/? [R=301,L]
+
+# Или второй вариант. Перенаправление домена с www на без-www
+#RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # Перенаправление с HTTP-версии сайта на HTTPS-версию
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Редирект с индексной страницы на саму папку (корень)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
+RewriteRule ^index$ https://ar-autoservice.com.ua/ [R=301,L]
+# Редирект для всех индексных страниц на сайте
+RewriteRule ^(.*)index$ https://ar-autoservice.com.ua/$1 [R=301,L]
+</IfModule>
+
 
 # Перенаправление на 404 страницу
 ErrorDocument 404 /404.php
@@ -80,7 +89,6 @@ RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi
 RewriteRule ^ru/services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-osi\.html$ /uslugi\-sto/regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
 
 # 301 --- https://www.ar-autoservice.com.ua/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/ua/razval-shozhdenie-irpen-bucha
-RewriteCond %{HTTP_HOST} ^www\.ar\-autoservice\.com\.ua$
 RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-zadnioyi\-osi\.html$ https://ar\-autoservice.com.ua/ua/razval\-shozhdenie\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ru/services/rehulyuvannya-kutiv-rozval-sxodzhennya-perednioyi-i-zadnioyi-osi.html => https://ar-autoservice.com.ua/uslugi-sto/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
