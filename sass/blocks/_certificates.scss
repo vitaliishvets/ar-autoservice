@@ -16,7 +16,7 @@
 .concept-item .concept-img img {
     margin-right: 20px;
 	margin-bottom: 20px;
-    width: auto;
+    // width: auto;
 }
 
 .concept-item .concept-text {
@@ -31,7 +31,7 @@
 }
 
 .cert-items .cert-item {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
     border: .0625rem solid #c8c8c8;
 }
@@ -43,7 +43,7 @@
     }
 
     .concept-item .concept-img img {
-        max-width: 150px;
+        width: 150px;
         margin-top: 5px;
     }
 
