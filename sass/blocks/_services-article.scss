@@ -3,46 +3,62 @@
  * # Service item article
  * ------------------------------------------------------------*/
 
-.services-article-section h1.headline {
-    margin-top: .25rem;
-}
+.services-article-section {
+    
+    h1.headline {
+        margin-top: .25rem;
+    }
+    
+    h3 {
+        margin: 2.1875rem auto 1.25rem;
+    }
 
-.services-article-section h2.headline {
-    margin-top: 2.5rem;
-}
+    p {
+        margin-bottom: 1rem;
+        font-size: 17px;
+        line-height: 1.6;
+    }
 
-.services-article-section .title-for-ul {
-    margin-bottom: .625rem;
-    font-size: inherit;
-}
+    ol li::marker {
+        font-weight: bold;
+        color: #e51313;
+    }
+    
+    figure {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    
+    figcaption {
+        margin: 1rem 0;
+        font-size: .875rem;
+        font-style: normal;
+        text-align: center;
+        color: $cs-color-secondary;
+    }
 
-.services-article-section ul li {
-    margin-bottom: .3125rem;
-	line-height: 1.5;
-}
+    .intro-text {
+        font-size: 19px;
+    }
 
-.services-article-section figure {
-    margin: 2rem 0;
-    text-align: center;
-}
-
-// .services-article-section img {
-//     border-radius: 12px;
-//     box-shadow: 0px 0px 7px rgba(0, 0, 0, .15);
-// }
-
-.services-article-section figcaption {
-    margin: 1rem 0;
-    font-size: .75rem;
-    font-style: normal;
-    text-align: center;
-    color: $cs-color-secondary;
-}
-
-.services-article-section p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
+    .recommendation {
+        margin: 0 -20px;
+        padding: 30px 20px;
+        font-family: 'MetaProCondBook', sans-serif;
+        font-weight: 400;
+        background-color: rgba(229,19,19,.06);
+    }
+    
+    .recommendation-title {
+        margin-bottom: .625rem;
+        font: 20px 'MetaProCondBold', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .recommendation-content {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 47.9375em) {
@@ -50,5 +66,12 @@
     .services-article-section .figcaption {
         margin-bottom: .625rem;
     }
+}
 
+@media only screen and (min-width: 48em) {
+    
+    .services-article-section .recommendation {
+        margin: 0;
+        padding: 30px 40px 32px 30px;
+    }
 }

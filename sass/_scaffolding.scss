@@ -107,10 +107,10 @@ dfn {
 }
 /* Не используемые стили - конец */
 
-h1 {
-    font-size: 2em;
-    margin: .67em 0;
-}
+// h1 {
+//     font-size: 2em;
+//     margin: .67em 0;
+// }
 
 /* Не используемые стили - начало */
 mark {
@@ -297,17 +297,17 @@ ul {
     margin-left: 0;
 }
 
-ol {
-    margin-bottom: 0;
-}
+// ol {
+//     margin-bottom: 0;
+// }
 
-ol li {
-    margin-top: .625rem;
-}
+// ol li {
+//     margin-top: .625rem;
+// }
 
-ol li:not(:last-child) {
-    margin-bottom: 1.5625rem;
-}
+// ol li:not(:last-child) {
+//     margin-bottom: 1.5625rem;
+// }
 
 // ul[class^=navigation-],
 // .pagination .active,

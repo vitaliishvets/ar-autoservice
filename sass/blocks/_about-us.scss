@@ -12,17 +12,9 @@
     margin-bottom: .625rem;
 }
 
-// .company-long-text h1.headline {
-//     line-height: 1.9375rem;
-// }
-
 .company-long-text .company-descr {
     font: 1.25rem/1.5 'MetaProCondBook', sans-serif;
 }
-
-// .company-long-text .company-descr {
-//     margin-bottom: 0;
-// }
 
 .company-long-text ul {
 	margin-bottom: 1.5rem;
@@ -41,7 +33,7 @@
 
 .company-short-text .figcaption {
 	font-style: normal;
-    font-size: .75rem;
+    font-size: .875rem;
     margin: .3125rem 0;
     color: $cs-color-secondary;
     text-align: center;
@@ -52,7 +44,6 @@
 	.company-short-text .boxRTE .breadcrumbs {
 		margin: 0;
 	}
-
 }
 
 @media only screen and (min-width: 48em) and (max-width: 63.9375em) {
@@ -72,7 +63,6 @@
     .company-short-text img {
         width: 100%;
     }
-
 }
 
 @media only screen and (min-width: 48em) {
@@ -81,7 +71,6 @@
         margin-left: 0;
         margin-right: 0;
     }
-
 }
 
 @media only screen and (min-width: 64em) {
@@ -97,5 +86,4 @@
     .company-short-text figure {
         margin-top: 0;
     }
-
 }

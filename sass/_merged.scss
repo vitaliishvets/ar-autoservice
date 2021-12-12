@@ -21,6 +21,38 @@
 //     max-width: 100%;
 // }
 
+.services-article-section h2,
+.blog-article-section h2 {
+    margin: 3.125rem auto 1.5625rem;
+    text-transform: uppercase;
+}
+
+.services-article-section h3,
+.blog-article-section h3 {
+    margin: 2.1875rem auto 1.25rem;
+}
+
+.blog-article-section h3 {
+    font-size: 1.5rem;
+}
+
+.services-article-section ul,
+.services-article-section ol,
+.blog-article-section ul,
+.blog-article-section ol {
+        margin-top: -14px;
+        margin-bottom: 1.875rem;
+    }
+
+.services-article-section ul li,
+.services-article-section ol li,
+.blog-article-section ul li,
+.blog-article-section ol li {
+    margin-bottom: .3125rem;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
 .moreLinkText:after {
     content: '»';
     // margin-left: .3125rem;
@@ -80,14 +112,38 @@
         margin: 0;
         font-size: 1rem;
     }
-
-    // .moreLink .moreLinkText {
-    //     display: none;
-    // }
-
 }
 
 @media only screen and (min-width: 48em) {
+
+    .services-article-section h1.headline,
+    .price-section h1.headline,
+    .blog-items h1.headline,
+    .our-team-section h1.headline,
+    .concepts-section h1.headline,
+    .vacancy-section h1.headline,
+    .company-long-text h1.headline,
+    .blog-article-section h1.headline,
+    .news-items h1.headline,
+    .news-article-section h1.headline,
+    .contacts-section h1.headline,
+    .uslugi-section h1.headline,
+    .customers-section h1.headline,
+    .offers-section h1.headline,
+    .online-video-section h1.headline,
+    .advantages-section h1.headline {
+        font-size: 2.25rem;
+    }
+
+    .services-article-section h2,
+    .blog-article-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .services-article-section h3,
+    .blog-article-section h3 {
+		font-size: 1.6875rem;
+	}
 
     .moreLink {
         font-size: 1.125rem;
