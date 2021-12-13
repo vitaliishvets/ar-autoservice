@@ -392,7 +392,7 @@ RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-z
 
 
 # Кэширование файлов с расширениями
-<filesMatch ".(jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
+<filesMatch ".(webp|jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
 
