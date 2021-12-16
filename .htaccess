@@ -295,8 +295,11 @@ RewriteRule ^ua/sto\-irpen\-bucha/remont\-avtokondicionerov\-irpen\-bucha$ /ua/r
 # 301 --- https://ar-autoservice.com.ua/ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha.html => https://ar-autoservice.com.ua/ua/remont-avtokondicionerov-irpen-bucha
 RewriteRule ^ua/uslugi\-sto/remont\-avtokondicionerov\-irpen\-bucha\.html$ /ua/remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
 
+# 301 --- https://ar-autoservice.com.ua/uslugi-sto/remont-avtokondicionerov-irpen-bucha => https://ar-autoservice.com.ua/remont-avtokondicionerov-irpen-bucha
+RewriteRule ^uslugi\-sto/remont\-avtokondicionerov\-irpen\-bucha$ /remont\-avtokondicionerov\-irpen\-bucha? [L,R=301]
+
 # 301 --- https://ar-autoservice.com.ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha
-# RewriteRule ^uslugi\-sto/diagnostika\-avtokondicionera\-irpen\-bucha$ /sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+RewriteRule ^uslugi\-sto/diagnostika\-avtokondicionera\-irpen\-bucha$ /sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ua/uslugi-sto/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha
 RewriteRule ^ua/uslugi\-sto/diagnostika\-avtokondicionera\-irpen\-bucha$ /ua/sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
@@ -335,6 +338,9 @@ RewriteRule ^ua/sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-o
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-osi => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-osi
 RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-osi? [L,R=301]
 
+# 301 --- https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-osi => https://ar-autoservice.com.ua/razval-shozhdenie-irpen-bucha
+RewriteRule ^regulirovka\-razvala\-shozhdenija\-perednej\-osi$ /razval\-shozhdenie\-irpen\-bucha? [L,R=301]
+
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi
 # RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi? [L,R=301]
 
@@ -366,7 +372,7 @@ RewriteRule ^ua/sto\-irpen\-bucha/ustanovka\-zashhity\-dvigatelja\-irpen\-bucha$
 RewriteRule ^sto\-irpen\-bucha/zapravka\-avtokondicionera\-freonom\-irpen\-bucha$ /zapravka\-avtokondicionera\-freonom\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/diagnostika-avtokondicionera-irpen-bucha
-# RewriteRule ^sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha$ /diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
+RewriteRule ^sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha$ /diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
 
 # 301 --- https://ar-autoservice.com.ua/ua/sto-irpen-bucha/diagnostika-avtokondicionera-irpen-bucha => https://ar-autoservice.com.ua/ua/diagnostika-avtokondicionera-irpen-bucha
 RewriteRule ^ua/sto\-irpen\-bucha/diagnostika\-avtokondicionera\-irpen\-bucha$ /ua/diagnostika\-avtokondicionera\-irpen\-bucha? [L,R=301]
@@ -390,6 +396,21 @@ RewriteRule ^services/rehulyuvannya\-kutiv\-rozval\-sxodzhennya\-perednioyi\-i\-
 # 301 --- https://ar-autoservice.com.ua/sto-irpen-bucha/regulirovka-razvala-shozhdenija-perednej-i-zadnej-osi => https://ar-autoservice.com.ua/razval-shozhdenie-irpen-bucha
 RewriteRule ^sto\-irpen\-bucha/regulirovka\-razvala\-shozhdenija\-perednej\-i\-zadnej\-osi$ /razval\-shozhdenie\-irpen\-bucha? [L,R=301]
 
+# Редирект изображений и других адресов не связанных напрямую со страницами
+# 301 --- https://ar-autoservice.com.ua/favicon.ico => https://ar-autoservice.com.ua/img/favicon/favicon.ico
+RewriteRule ^favicon\.ico$ /img/favicon/favicon.ico? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/img/certificates/kayaba-service-min.png => https://ar-autoservice.com.ua/img/sertifikaty/logo-kyb.svg
+RewriteRule ^img/certificates/kayaba\-service\-min\.png$ /img/sertifikaty/logo\-kyb.svg? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/img/service/zamina-remenia-hrm/skoda-octavia-a7-2016-1.6-diesel-550x360@2x.jpg => https://ar-autoservice.com.ua/img/sto-irpen-bucha/zamina-remenia-hrm/skoda-octavia-a7-2016-1.6-diesel-550x360@2x.jpg
+RewriteRule ^img/service/zamina\-remenia\-hrm/skoda\-octavia\-a7\-2016\-1\.6\-diesel\-550x360@2x\.jpg$ /img/sto\-irpen\-bucha/zamina\-remenia\-hrm/skoda\-octavia\-a7\-2016\-1.6\-diesel\-550x360@2x.jpg? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/img/service/zamina-remenia-hrm/skoda-superb-2007-2.5-diesel-550x360@2x.jpg => https://ar-autoservice.com.ua/img/sto-irpen-bucha/zamina-remenia-hrm/skoda-superb-2007-2.5-diesel-550x360@2x.jpg
+RewriteRule ^img/service/zamina\-remenia\-hrm/skoda\-superb\-2007\-2\.5\-diesel\-550x360@2x\.jpg$ /img/sto\-irpen\-bucha/zamina\-remenia\-hrm/skoda\-superb\-2007\-2.5\-diesel\-550x360@2x.jpg? [L,R=301]
+
+# 301 --- https://ar-autoservice.com.ua/img/o-nas/o-nas-sto-irpen-bucha-ar-avtoservis-690x430.jpg => https://ar-autoservice.com.ua/img/o-nas/o-nas-sto-irpen-bucha-ar-avtoservis-690x430@1x.jpg
+RewriteRule ^img/o\-nas/o\-nas\-sto\-irpen\-bucha\-ar\-avtoservis\-690x430\.jpg$ /img/o\-nas/o\-nas\-sto\-irpen\-bucha\-ar\-avtoservis\-690x430@1x.jpg? [L,R=301]
 
 # Кэширование файлов с расширениями
 <filesMatch ".(webp|jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|woff2)$">
