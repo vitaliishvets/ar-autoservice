@@ -14,7 +14,6 @@
 .boxSidenav a,
 .boxSidenav a h2 {
     color: #ffffff;
-    transition: all .15s;
 }
 
 .boxSidenav p:not(.headline) {
@@ -43,7 +42,6 @@
 .boxSidenav.bgGrey .moreLink:hover,
 .boxSidenav.bgGrey .moreLink:active {
     color: #e51313;
-    transition: all .15s;
 }
 
 .boxSidenav.bgGrey a .content,

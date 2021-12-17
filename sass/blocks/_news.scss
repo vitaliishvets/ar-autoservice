@@ -50,17 +50,11 @@
     align-items: baseline;
 }
 
-.news-card .news-card__title a,
-.news-card .moreLink a {
-    transition: all .15s;
-}
-
 .news-card__title a:hover,
 .news-card__title a:active,
 .news-card .moreLink a:hover,
 .news-card .moreLink a:active {
-    color: #e51717;
-    transition: all .15s;
+    color: #e51313;
 }
 
 .news .moreLink {
