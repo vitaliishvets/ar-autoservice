@@ -206,6 +206,27 @@
 //   display: block;
 // }
 
+.footer .socials__title {
+    display: block;
+    margin-bottom: .875rem;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #545454;
+}
+
+.footer .socials__link {
+    display: inline-block;
+    width: 1.75rem;
+    margin-right: 1rem;
+    line-height: 2.25rem;
+}
+
+.footer .socials__link .socials__icon {
+    width: 1.75rem;
+    fill: #323232;
+}
+
 .nav__list {
     list-style: none;
     text-transform: uppercase;
@@ -256,6 +277,10 @@
 
     .footer .headline {
         margin-top: 2.5rem;
+    }
+
+    .footer .socials {
+        margin-bottom: 1.5625rem;
     }
 
     .nav__list {
