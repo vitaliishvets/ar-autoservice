@@ -15,6 +15,18 @@
     color: #e51717;
 }
 
+.stage.slider {
+    max-height: 17.5rem;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 48em) {
+    
+    .stage.slider {
+        max-height: 28.4375rem;
+    }
+}
+
 @media only screen and (max-width: 20em) {
     
     .headline--visually-hidden {
